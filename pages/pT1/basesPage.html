@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script language=javascript></script>
+	<title> Bases y Cambios de Base </title>
+
+</head>
+
+<body>
+	<div class="background">
+		<nav class="navbar sticky-top bg-dark">
+			<p class="text-principal-title">¿Qué tanto sabe de los sistemas de numeración?</p>
+			<button class="btn btn-outline-light" type="button" href="principalT1.html">
+				<a class="text-light" href="principalT1.html"> Volver </a>
+			</button>
+		</nav>
+
+		<div class "container-sm">
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 600px;" id="historia">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto my-auto">Un poco de Historia...</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								El concepto “Base” se remonta de mucho tiempo atrás, donde los nuestros ancestros tenían la necesidad de contar a partir de símbolos, a partir de esto, se creaban varios, cada uno interpretando un valor diferente.<br>
+								En el momento en que se llegaba fin a una cantidad determinada, se marcaba un valor distinto que los representaba a todos, este es denominado como “Base”, a partir de allí se volvería a añadir los números desde el comienzo, creando
+								una secuencia que puede ser prácticamente infinita.<br>
+								Actualmente, la base que más se utiliza es la Decimal (10), pues se deriva de la cantidad de dedos que podemos contar en nuestras manos, aun esto, al pasar de los años la forma de escribir esto ha sido muy diferente, pues hay
+								culturales las cuales tienen una forma muy diferente de escribir a la que normalmente conocemos, esto se le denomina como “Sistema de Numeración.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 790px;" id="condicionesgenerales">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto my-auto">Condiciones Generales</p>
+				<hr size="2px" color="black" />
+				<div class="col">
+					<div class="card-body">
+						<img src="../../resources/rT1/basesPage-CondicionesGenerales.png" class="rounded mx-auto my-auto" width="600px" height="150px"><br><br>
+						<p class="card-text card-content text-justify">
+							En este Teorema, se puede evidenciar que cualquier número podría escribirse en cualquier base b, y aún así se garantiza la conversión con otro tipo de base.<br>
+							Es de considerar si algún número tiene base diferente a la Decimal, este deberá describirse con la siguiente connotación, en donde:<br>
+							num = número y b = base<br>
+						</p>
+						<div class="row no-gutters">
+							<div class="col mx-auto my-auto">
+								<p class="card-text card-content mx-auto my-auto text-center">
+									(num)<sub>b</sub>
+								</p>
+							</div>
+							<div class="col mx-auto my-auto">
+								<p class="card-text card-content mx-auto my-auto text-center">
+									//
+								</p>
+							</div>
+							<div class="col mx-auto my-auto">
+								<p class="card-text card-content mx-auto my-auto text-center">
+									(1214)<sub>4</sub>
+								</p>
+							</div>
+							<div class="col mx-auto my-auto">
+								<p class="card-text card-content mx-auto my-auto text-center">
+									(325245)<sub>6</sub>
+								</p>
+							</div>
+						</div>
+						<hr size="2px">
+						</hr>
+						<p class="card-text card-content text-justify">
+							Recordar los elementos que componen una división:<br><br>
+							<img src="../../resources/rT1/division.png" class="rounded mx-auto my-auto" width="600px" height="150px"><br>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<div class "container">
+				<div class="row mx-auto row-cols-2 row-cols-md-2" style="width: 1200px;">
+
+					<!-- Inicio Carta-->
+					<div class="col-sm-6 p-2">
+						<div class="card border border-dark" id="baseDecimal">
+							<p class="card-title font-weight-bolder text-uppercase mx-auto my-auto">Sistema Decimal</p>
+							<hr size="2px" color="black" />
+							<div class="row no-gutters">
+								<div class="col">
+									<div class="card-body">
+										<p class="card-text card-content text-justify">
+											Este sistema es el más usado por las personas a nivel mundial, pues es que normalmente lo utilizamos para realizar operaciones básicas en nuestro diario como la suma, la resta, la adición. <br>
+											Este trabaja 10 símbolos en su numeración, los cuales son <strong>0, 1, 2, 3, 4, 5, 6, 7. 8, 9.</strong><br>
+											Como su nombre lo indica, es base <strong> 10 </strong>, por lo tanto cualquier número octal puede expresarse de la manera:<br>
+											<p class="card-text card-content mx-auto my-auto text-center">
+												(153867191)<sub>10</sub><br>
+												<p class="card-text card-content text-justify">
+													Aunque al ser este el más usado, se puede obviar los paréntesis y la base.
+												</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Fin Carta-->
+
+					<!-- Inicio Carta-->
+					<div class="col-sm-6 p-2">
+						<div class="card border border-dark" id="baseBinaria">
+							<p class="card-title font-weight-bolder text-uppercase mx-auto my-auto">Sistema binario</p>
+							<hr size="2px" color="black" />
+							<div class="row no-gutters">
+								<div class="col">
+									<div class="card-body">
+										<p class="card-text card-content text-justify">
+											Este sistema es muy conocido y muy tratado para operaciones básicas, pues este es el que se compone de tan solo 2 símbolos para trabajar su numeración <strong> 0 y 1 </strong>.<br>
+											Como su nombre lo indica, es base <strong> 2 </strong>, por lo tanto cualquier número binario puede expresarse de la manera:<br>
+											<p class="card-text card-content mx-auto my-auto text-center">
+												(1100011010)<sub>2</sub>
+											</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Fin Carta-->
+
+					<!-- Inicio Carta-->
+					<div class="col-sm-6 p-2">
+						<div class="card border border-dark" id="baseOctal">
+							<p class="card-title font-weight-bolder text-uppercase mx-auto my-auto">Sistema octal</p>
+							<hr size="2px" color="black" />
+							<div class="row no-gutters">
+								<div class="col">
+									<div class="card-body">
+										<p class="card-text card-content text-justify">
+											Este sistema es el que se compone de tan solo 8 símbolos para trabajar su numeración <strong>0, 1, 2, 3, 4, 5, 6, 7.</strong><br>
+											Como su nombre lo indica, es base <strong> 8 </strong>, por lo tanto cualquier número octal puede expresarse de la manera:<br>
+											<p class="card-text card-content mx-auto my-auto text-center">
+												(1536711)<sub>8</sub>
+											</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Fin Carta-->
+
+					<!-- Inicio Carta-->
+					<div class="col-sm-6 p-2">
+						<div class="card border border-dark" id="baseHexadecimal">
+							<p class="card-title font-weight-bolder text-uppercase mx-auto my-auto">Sistema hexadecimal</p>
+							<hr size="2px" color="black" />
+							<div class="row no-gutters">
+								<div class="col">
+									<div class="card-body">
+										<p class="card-text card-content text-justify">
+											Este sistema es el que se compone de tan solo 16 símbolos para trabajar su numeración <strong>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.</strong><br>
+											Como su nombre lo indica, este trabaja base 16, por lo tanto cualquier número octal puede expresarse de la manera:<br>
+											<p class="card-text card-content mx-auto my-auto text-center">
+												(CA7F)<sub>16</sub>
+											</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Fin Carta-->
+
+				</div>
+			</div>
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-1" style="max-width: 600px;" id="otraBase">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto my-auto">Otras bases</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								Si la base excede las 10 símbolos (Base Decimal), la siguiente numeración 10, 11, 12, 13, 14, … , (b - 1), tomará connotación de las letras del abecedario iniciando desde la A, así como se obtiene en ejemplo:
+								<p class="card-text card-content mx-auto my-auto text-center text-justify">
+									Si la <strong>b: </strong> 18, entonces se obtiene que los siguientes valores a partir del 9 son: <br>
+									10 = <strong>A</strong><br>
+									11 = <strong>B</strong><br>
+									12 = <strong>C</strong><br>
+									13 = <strong>D</strong><br>
+									14 = <strong>E</strong><br>
+									15 = <strong>F</strong><br>
+									16 = <strong>G</strong><br>
+									17 = <strong>H</strong><br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 900px;" id="conversion">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto my-auto">Conversión</p>
+				<hr size="2px" color="black" />
+				<div class="col">
+					<div class="card-body">
+						<p class="card-text card-content text-justify">
+							Si se desea convertir un número de base 10 a cualquiera otra, se deberán seguir los siguientes pasos: <br><br>
+							<strong>1: </strong> Para iniciar, dividiremos el número decimal, este será nuestro dividendo.<br>
+							<strong>2: </strong> El número de nuestra base objetivo pasará a ser nuestro divisor.<br>
+							<strong>3: </strong> Se realiza la operación, a partir de esto guaraderos todos los residuos (restos) que vayamos obteniendo.<br>
+							<strong>4: </strong> Una vez tengamos nuestro cociente, este pasará a hacer nuestro nuevo divisor.<br>
+							<strong>5: </strong> Se procederán a hacer divisiones sucesivas con los pasos anteriores, y el proceso se acabará cuando el cociente quede en 0.<br>
+							<strong>6: </strong> Al final se almaceraon todos los residuos, estos son los núeros que conforman la cadena de caracteres de la conversión. Para acomodarlos, se procederá a iniciar con el último y se deberá ir progresivamente
+							acomodando los de las anteriores hasta llegar al primer residuo.<br>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 1</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto text-center">
+					Se desea convertir el numero 560 en base 10, a binario.
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-auto">
+						<img src="../../resources/rT1/ej1-basesPage.png" class="rounded" width="400px" height="300px" alt="ejemplo1">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Como se mencionó en la conversión, procederemos a realizar divisiones progresivas y nuestra primera será 560 entre 2.<br><br>
+								procedemos a realizar la operación y nuestro primer residuo que guardamos es el 0 y el cociente 280 será el nuevo divisor.<br><br>
+								Se realizan todas las divisiones hasta que nuestro cocinte resulte en 0.<br><br>
+								Después de esto, los residuos se acomodarán en sentido derecho - izquierdo para así reescribir nuestra nueva cifra en base binaria.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplos dinámicos</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Conversión de números decimales a otras bases<br>
+					número: <input type="text" id="n" name="n" title="Puedes ingresar cualquier número decimal entero" size=5> a
+
+					<select id="base">
+						<option value="binario">binario</option>
+						<option value="octal">cctal</option>
+						<option value="hexadecimal">hexadecimal</option>
+					</select>
+					<button onclick="conversion()">Calcular</button>
+					<p class="card-text card-content mx-auto my-auto"> El resultado es: </p>
+					<p id="resultado_b" class="card-text card-content mx-auto my-auto"></p>
+			</div>
+			<!-- Fin Carta-->
+
+
+			<div class="container-sm">
+				<footer>
+					<p class="card-text text-center"> <small class="text-muted">Última Actualización: 2 de Marzo, 2019</small></p>
+				</footer>
+			</div>
+
+		</div>
+
+	</div>
+<script src  = "ejemplo_din_base.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url(banner.css);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Spartan', serif;
+	background: #0b2027;
+}
+
+header {
+	position: relative;
+	float: center;
+	width: 100%;
+	height: 8%;
+	background: #333;
+	color: #fff;
+}
+
+header .titulo {
+	position: relative;
+	top: 150%;
+}
+
+.contenedor {
+	position: relative;
+	text-align: center;
+	color: #fff;
+	width: 80%;
+	height: 21%;
+	margin: auto;
+}
+
+.contenedor .imagenes {
+	position: relative;
+	margin: auto;
+	float: center;
+	width: 234px;
+	height: 120px;
+}
+.contenedor .imagenes2 {
+	position: relative;
+	margin: auto;
+	width: 234px;
+	height: 200px;
+}
+.contenedor .texto {
+	width: 100%;
+	height: 400%;
+	background: #fff;
+	color: #000;
+}
+.contenedor .textocita {
+	font-size: 10px;
+	width: 100%;
+	height: 10%;
+	background: #fff;
+	color: #000;
+}
+
+header .contenedor {
+	display: tab
+}
+
+section {
+	width: 100%
+	margin-bottom: 25px;
+}
+
+footer {
+	position: relative;
+	height: 0%;
+	top: 30%;
+}
+
+footer .contenedor {
+	padding-bottom: 25px;
+}
+
+footer .contenedor1 {
+	margin: auto;
+	position: relative;
+	width: -100%;
+	height: 0%;
+	top: 35%;
+}
+
+footer .copy {
+	margin: auto;
+	position: relative;
+	text-align: justify;
+	font-size: 20px;
+	color: #fff;
+	width: 100%;
+	height: 10%;
+	top: 40%;
+}
+
+footer .copy1 {
+	margin: auto;
+	position: relative;
+	text-align: left;
+	font-size: 10px;
+	color: #fff;
+	width: 100%;
+	height: 10%;
+	top: 30%;
+}
+
+
+@media (min-width: 768px) {
+
+	footer .contenedor {
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 1024px) {
+	.contenedor {
+		width: 1000px;
+	}
+
+	.contenedor1 {
+		width: 1000px;
+	}
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title> Euclides </title>
+
+</head>
+
+<body>
+	<div class="background">
+
+
+		<nav class="navbar sticky-top bg-dark">
+			<p class="text-principal-title">¿Qué tanto sabe de los sistemas de numeración?</p>
+			<button class="btn btn-outline-light" type="button">
+				<a class="text-light" href="principalT1.html">Volver</a>
+			</button>
+		</nav>
+
+		<div class="container-sm">
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="algoritmo">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">¿CUÁL ES?</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								Cuando queremos encontrar el máximo común divisor (MCD) puede que estemos descomponiendo en factores primos por un rato. Sin embargo el algoritmo de Euclides permite encontrar el MCD de cualquier par de números de forma eficiente
+								(Jiménez L., Gordillo J., & Rubiano G., 2004).
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="euclides">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">¿Quién fue Euclides?</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col my-3 mx-3 text-center">
+						<img src="../../resources/rT1/euclidesImg.jpg" class="rounded" width="600px" height="400px" alt="Euclides">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								“Euclides de Alejandría. Nació alrededor de 325 AC y murió alrededor de 265 AC en Alejandría, Egipto. Euclides de Alejandría es el matemático más prominente de la antigüedad mejor conocido por su tratado sobre matemáticas llamado Los
+								Elementos. La vigencia de Los Elementos hace de Euclides el principal maestro de matemáticas de todos los tiempos.” (Prieto C., s.f). <br>
+								El algoritmo de Euclides fue presentado en su libro “Elementos” (Jiménez L., Gordillo J., & Rubiano G., 2004).
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 1</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto text-justify">
+					Para calcular el MCD de 328 y 26 se tienen dos opciones.<br>
+					(a) descomposición en números primos <br>
+					(b) algoritmo de Euclides<br><br>
+					Nota: El MCD de los números a y b también puede escribirse como (a,b).
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-auto text-center">
+						<img src="../../resources/rT1/ej1-euclidesPage.png" class="rounded" width="500px" height="550px" alt="ejemplo1">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Lo que hicimos fue dividir el mayor de los dos números del MCD por el menor, tal que:<br>
+								<center>328/26</center><br>
+								<p class="text-justify">
+									Luego representamos esto diciendo que 328 es igual a X veces 26 más su residuo.<br>
+									<center>328 = (12)*26 + 16</center><br>
+									<p class="text-justify">
+										En el siguiente paso dividimos 26 por su residuo, y volvimos a representar como x veces 16 más el residuo.<br>
+										<center>26 = (1)*16 + 10</center><br>
+										<p class="text-justify">
+											Esto lo repetimos hasta que el residuo sea cero.<br>
+											<center>6 = (1)*4 + 2</center><br>
+											<center>4 = (2)*2+0</center><br>
+											<p class="text-justify">
+												Entonces el resultado del MCD para ambos números se encuentra como el residuo de la penúltima línea. En este caso se observa (328, 26) = 2
+												Una explicación más teórica del método se encuentra en el apartado 2.3 del libro “Teoría de números para principiantes” de Jiménez L., Gordillo J., & Rubiano G., 2004).<br>
+											</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 2</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/ej2-euclidesPage.png" class="rounded" width="450px" height="500px" alt="ejemplo2">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								En este ejemplo se observa cual es el orden en el que se deben hacer las operaciones del algoritmo de euclides.<br><br>
+								Para obtener (205, 1403) no se puede empezar dividiendo el número más pequeño por el más grande, porque su división tiene como residuo cero.
+								<br><br>
+								El resultado es (205, 1403) = 1<br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 3</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/ej3-euclidesPage.png" class="rounded" width="500px" height="550px" alt="ejemplo3">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								En el siguiente ejemplo se observa cómo aplicar el algoritmo de Euclides para tres números.<br><br>
+								Para obtener (1404, 204, 8088) se empieza a realizar (1404, 204).<br><br>
+								(204, 1404) = 12, entonces se vuelve a realizar el mismo procedimiento usando el MCD anterior y el número faltante.<br><br>
+								El resultado es (205, 1403, 8088) = 12<br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1200px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 4</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Escribir como combinación lineal los números 726 y 275
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/ej4-euclidesPage.png" class="rounded" width="800px" height="550px" alt="ejemplo4">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Se usa el algoritmo de Euclides para encontrar el MCD de a y b. Luego con las ecuaciones del método se empiezan a hacer igualdades buscando volver a los términos originales a y b.<br><br>
+								Al finalizar las respuestas son del tipo (a, b) = aX+bY, una combinación lineal de los números a y b<br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplos dinámicos</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Calcular el MCD de dos números<br>
+					número 1: <input type="text" id="n1" name="n1" title="Puedes ingresar cualquier número entero" size=5>
+					número 2: <input type="text" id="n2" name="n2" title="Puedes ingresar cualquier número entero" size=5>
+					<button onclick="init()">Calcular</button>
+					<p id="division" class="card-text card-content mx-auto my-auto"></p>
+				</p>
+				<hr size="2px">
+				</hr>
+				<p class="card-text card-content mx-auto my-auto">
+					Calcular el MCD de tres números<br>
+					número 1: <input type="text" id="n31" name="n31" title="Puedes ingresar cualquier número entero" size=5>
+					número 2: <input type="text" id="n32" name="n32" title="Puedes ingresar cualquier número entero" size=5>
+					número 3: <input type="text" id="n33" name="n33" title="Puedes ingresar cualquier número entero" size=5>
+					<button onclick="gcd3()">Calcular</button>
+					<p id="res_mcd3" class="card-text card-content mx-auto my-auto"></p>
+				</p>
+				<hr size="2px">
+				</hr>
+				<p class="card-text card-content mx-auto my-auto">
+					Calcular el MCD de cuatro números<br>
+					número 1: <input type="text" id="n41" name="n41" title="Puedes ingresar cualquier número entero" size=3>
+					número 2: <input type="text" id="n42" name="n42" title="Puedes ingresar cualquier número entero" size=3>
+					número 3: <input type="text" id="n43" name="n43" title="Puedes ingresar cualquier número entero" size=3>
+					número 4: <input type="text" id="n44" name="n44" title="Puedes ingresar cualquier número entero" size=3>
+					<button onclick="gcd4()">Calcular</button>
+					<p id="res_mcd4" class="card-text card-content mx-auto my-auto"></p>
+				</p>
+			</div>
+			<!-- Fin Carta-->
+
+			<div class="container-sm">
+				<footer>
+					<p class="card-text text-center"> <small class="text-muted">Última Actualización: 2 de Marzo, 2019</small></p>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script src = "ejemplo_din_euclides.js"></script>
+</body>
+
+</html>

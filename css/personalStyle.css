@@ -1,0 +1,37 @@
+.background{
+	background-image: url('../resources/textureBackground.jpg');
+}
+
+.text-principal-title{
+	font-size: 40px;
+	font-weight: bolder;
+	color: #FFFFFF;
+	font-family: "Garamond";
+}
+
+.text-base{
+	font-size: 15px;
+}
+
+.card-title {
+	font-size: 30px;
+}
+
+.card-subtitle{
+	font-size: 25px;
+}
+
+.card-view {
+	font-size: 21px;
+}
+.card-items {
+	font-size: 20px;
+}
+
+.card-content{
+	font-size: 23px;
+}
+
+.card-content-exp{
+	font-size: 18px;
+}

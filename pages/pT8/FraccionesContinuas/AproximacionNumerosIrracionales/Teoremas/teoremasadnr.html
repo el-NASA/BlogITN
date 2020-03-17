@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../../../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../../../../css/personalStyle.css" rel="stylesheet" media="screen">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title> Teoremas: Aproximacion de números Irracionales </title>
+
+</head>
+
+<body>
+	<div class="background">
+
+
+		<nav class="navbar sticky-top bg-dark">
+			<p class="text-principal-title">Aproximacion de números Irracionales</p>
+			<button class="btn btn-outline-light" type="button">
+				<a class="text-light" href="../../../principalT8.html">Volver</a>
+			</button>
+		</nav>
+
+		<div class="container-sm">
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="algoritmo">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Teoremas</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								<i> Ahora se van a utilizar las convergentes de una fraccion continua simple
+								para encontrar aproximaciones racionales para un numero irracional x.
+
+								<br>
+
+								[1.] Teorema: Sea C<sub>n</sub> = P<sub>n</sub> /q<sub>n</sub> la convergente n-enesima de la fraccion continua simple [a1, a2, ...] que representa al numero x, entonces:
+								<br><br>
+								<br><br>
+								<big> |x - (P<sub>n</sub> / q<sub>n</sub>) | < | x - (P<sub>n-1</sub> / q<sub>n-1</sub>) | </big>
+
+								<br><br>
+
+								[2.] Teorema: Sea <big>C<sub>n</sub> = P<sub>n</sub>q<sub>n</sub></big> la convergente n-esima de la fraccion continua simple que representa al numero real x, entonces
+								
+								<br><br>
+
+								<big> | X - P<sub>n</sub>q<sub>n</sub> | < 1 / q<sup>2</sup><sub>n</sub></big>
+
+								<br><br>
+
+								Demostracion: Como las convergentes de la fraccion continua simple que representa al numero x satisfacen las desigualdades
+								
+								<br><br>
+								<img src="../../../../../resources/rT8/AproximacionNumerosIrracionales/Teoremas/05teo01.png" class="rounded" width="550px" height="90px">
+								<br><br>
+
+								Entonces cualquier valor de n, x siempre esta entre C<sub>n</sub> y C<sub>n+1</sub> y por lo tanto tenemos que:
+								
+								<br><br>
+								<img src="../../../../../resources/rT8/AproximacionNumerosIrracionales/Teoremas/05teo02.png" class="rounded" width="600px" height="110px">
+								<br><br>
+								
+								Sabemos que <big> q<sub>n+1</sub> &ge; q<sub>n</sub></big> para todo n &ge; 1 , luego <big>q<sub>n</sub>q<sub>n+1</sub> &ge; q<sup>2</sup><sub>n</sub></big> y por lo tanto concluimos que:
+
+								<br><br>
+
+								<big>| x - C<sub>n</sub>| < 1/q<sup>2</sup><sub>n</sub></big>
+								<br> <br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<div class="container">
+				<footer>
+					<p class="card-text text-center"> <small class="text-muted">Basado en autor: Jiménez, Gordillo, Rubiano (2004)<i>Introducción a la teoría de números</small></p>
+				</footer>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

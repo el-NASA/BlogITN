@@ -1,0 +1,56 @@
+#banner {
+	margin-top: 0px;
+}
+
+h2 {
+	position: relative;
+	font-size: 38px;
+	top: -80%;
+}
+
+h3 {
+	position: relative;
+	font-size: 38px;
+	top: 0%;
+	height: 10%;
+}
+
+h4 {
+	position: relative;
+	float: left;
+	font-size: 28px;
+	top: 10%;
+	width: 35%;
+	height: 0%;
+}
+
+.contenedor {
+	top: -25%;
+	color: #fff;
+}
+
+
+@media (min-width: 480px) {
+	#banner h2 {
+		font-size: 40px; 
+	}
+}
+
+@media (min-width: 768px) {
+	#banner {
+		height: 300px;
+		overflow: hidden;
+	}
+
+	#banner img {
+		height: auto;
+		margin-top: -100px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	#banner img {
+		margin-top: -200px;
+	}
+}
