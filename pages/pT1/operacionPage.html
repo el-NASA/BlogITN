@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title> Operaciones Aritméticas </title>
+
+</head>
+
+<body>
+	<div class="background">
+
+
+		<nav class="navbar sticky-top bg-dark">
+			<p class="text-principal-title">¿Qué tanto sabe de los sistemas de numeración?</p>
+			<button class="btn btn-outline-light" type="button">
+				<a class="text-light" href="principalT1.html">Volver</a>
+			</button>
+		</nav>
+
+		<div class="container-sm">
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="adicion">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Adición</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Binarios
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/sumaBinario.jpg" class="rounded" width="500" height="300px" alt="ejemplo1">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Para sumar números binarios es necesario tener en cuenta las siguientes posibles combinaciones:<br>
+								<br>
+								<center>•	0 + 0 = 0<br></center>
+								<center>•	0 + 1  = 1<br></center>
+								<center>•	1  + 0 = 1<br></center>
+								<center>•	1  + 1  = 10<br></center>
+								<br><br>
+							<p class="text-justify">
+								Se opera de igual manera que en el sistema decimal de derecha a izquierda, y en caso de encontrarse con un 1 + 1, se pone 0 y se lleva 1.
+							</p>
+						</div>
+					</div>
+				</div>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Octales
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Para sumar números en base 8 (octal), debemos tener en cuenta que solo tomaran valores entre 0 y 8.
+								<br><br> En caso de que la suma exceda la base del sistema, se escribe el resultado y se resta 8, luego se coloca el acarreo en la siguiente columna. <br><br>
+								Se opera de igual manera que en el sistema decimal de derecha a izquierda, el acarreo depende de las veces que supere la base del sistema.<br>
+
+							</p>
+						</div>
+					</div>
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/sumaOctal.jpg" class="rounded" width="500" height="300px" alt="ejemplo1">
+					</div>
+				</div>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Hexadecimales
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/sumaHexadecimal.jpg" class="rounded" width="500" height="300px" alt="ejemplo1">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Para sumar números hexadecimales se debe tener en cuenta que es en base 16 y los números se distribuyen así, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.<br><br>
+								Donde A=10, B=11, C=12, D=13, E=14 y F=15<br><br>
+								Se opera de igual manera que en el sistema decimal de derecha a izquierda, en caso de que la suma supere la base, se resta 16, y se arrastra 1 por cada.<br>
+
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="multiplicacion">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">MULTIPLICACIÓN</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Binarios
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/multiplicacionBinario.jpg" class="rounded" width="500" height="300px" alt="ejemplo1">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								La multiplicación en binario es igual que en decimales, incluso con más facilidad ya que el 0 multiplicado por cualquier número da 0, y el 1 es un elemento neutro.
+							</p>
+						</div>
+					</div>
+				</div>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Octales
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								La multiplicación de octal se realiza de la misma manera que el decimal, pero teniendo en cuenta que si el resultado excede la base (8) se debe restar 8 y acarrear según la cantidad de veces que este lo exceda.
+							</p>
+						</div>
+					</div>
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/multiplicacionOctal.jpg" class="rounded" width="500" height="300px" alt="ejemplo1">
+					</div>
+				</div>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Hexadecimales
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/multiplicacionHexadecimal.jpg" class="rounded" width="500" height="300px" alt="ejemplo1">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								La multiplicación de hexadecimal se realiza de la misma manera que el decimal, pero teniendo en cuenta que si el resultado excede la base (16) se debe restar 16 y acarrear según la cantidad de veces que este lo exceda.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="division">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">DIVISIÓN</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Binarios
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/divisionBinario.jpg" class="rounded" width="500" height="300px" alt="ejemplo1">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Al momento de dividir binarios se empieza tomando el mismo número de cifras, si no se puede dividir, se intenta tomando un digito más. <br><br>
+								Si la división es posible el divisor solo podrá estar contenido una vez en el dividendo. En ese caso el resultado de multiplicar el divisor por 1 es el mismo divisor. Restamos las cifras del dividendo del divisor y bajamos la siguiente cifra. La división se continúa como en el sistema decimal.
+
+							</p>
+						</div>
+					</div>
+				</div>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Octales
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								La división de octal se efectúa de la misma manera que en el sistema decimal con la diferencia de que las restas de la división se realizan en sistema octal, para determinar porque número se va a multiplicar el divisor se recomienda hacer una tabla de valores para mayor facilidad.
+							</p>
+						</div>
+					</div>
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/divisionOctal.jpg" class="rounded" width="500" height="300px" alt="ejemplo1">
+					</div>
+				</div>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto">
+					Hexadecimales
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-3 text-center">
+						<img src="../../resources/rT1/divisionHexadecimal.jpg" class="rounded" width="500" height="300px" alt="ejemplo1">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Se realiza del mismo modo que en el sistema numérico decimal, para determinar por cual número se va a multiplicar el divisor se recomienda hacer una tabla de valores.<br><br>
+								Para realizar la tabla multiplicaremos el divisor por cada uno de los valores del sistema hexadecimal.
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<div class="container-sm">
+				<footer>
+					<p class="card-text text-center"> <small class="text-muted">Última Actualización: 2 de Marzo, 2019</small></p>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script src = "ejemplo_din_euclides.js"></script>
+</body>
+
+</html>
