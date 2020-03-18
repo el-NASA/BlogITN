@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title> Ley de Reciprocidad </title>
+
+</head>
+
+<body>
+	<div class="background">
+
+
+		<nav class="navbar sticky-top bg-dark">
+			<p class="text-principal-title">Reciprocidad</p>
+			<button class="btn btn-outline-light" type="button">
+				<a class="text-light" href="principal.html">Volver</a>
+			</button>
+		</nav>
+
+		<div class="container-sm">
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="def">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">DEFINICIÓN</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								Esta ley fue conjeturada, basándose en evidencia numérica, por Euler en 1783 y Lagrange en 1785. Legendre le dio la forma actual a esta ley, pero no pudo dar una prueba completa. La primera prueba rigurosa fue dada por Gauss en a la edad de 18 años. Hasta el 2004 se conocían 190 pruebas diferentes. Gauss llamó a este teorema “Aureum Theorema”. Su importancia en la teoría de números no tienen discusión. Al respecto, Hecke afirmó al respecto: “La teoría de números moderna comenzó con el descubrimiento de la Ley de Reciprocidad Cuadrática”.
+                                La prueba del teorema sigue es la tercera prueba que dio Gauss. La prueba se basa en un argumento geométrico”.
+                            <br>
+							</br>
+							</p>
+                                <div class="col my-3 mx-3 text-center">
+						<img src="../../resources/rT7/euler.jpg" class="rounded" width="250px" height="280px" alt="Euler">
+					</div>
+						</div>
+					</div>
+        </div>
+        Adaptación de (Mora, W. 2010: 116)
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="teorema">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">TEOREMA</p>
+				<hr size="2px" color="black" />
+			   <div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								    Sean p y q primos impares distintos. Entonces:
+
+                                    <br>
+                                    <div class="col my-3 mx-3 text-center">
+						<img src="../../resources/rT7/formula.png" class="rounded" width="320px" height="70px" alt="Formula">
+					</div>
+
+                         <p  class="card-text card-content text-justify"> Adaptación de (Mora, W. 2010: 117)   </p>
+							<br>
+                               <p class="card-text card-content text-justify">
+                             La ley de reciprocidad <b>(p &divide; q)</b> se define siempre que q es un número impar. Tiene las siguientes propiedades que le permiten ser fácilmente calculado.
+                                        <BR>
+                             <H3>PROPIEDADES   </H3>
+                             <BR>
+							</p>
+                             <p class="justificado">
+
+                                      <h5 style:"font-weight:normal">
+
+                                        <ul>
+                                            <li>( a &divide; q ) = ( b &divide; p ) si a = b <i>mod</i> q .     </li>
+                                        <br>
+                                               <li> (1 &divide; q ) = 1 y (0 &divide; q ) = 0.    </li>
+                                                <br>
+                                                    <li>(2 p &divide; q ) = ( p &divide; q ) si q = ± 1 <i>mod</i> 8. De lo contrario (2 p &divide; q ) =  -( p &divide; q ).     </li>
+                                                  <br> <li><i> ( Reciprocidad cuadrática ) </i>Si p y q son ambos impares, entonces ( p &divide; q ) = ( q &divide; p ) a menos que ambos p y q son congruentes a 3 mod 4, en cuyo caso ( p &divide; q ) = -( q &divide; p )              </li>
+                                   <br><li> Si q es primo, entonces ( p &divide; q ) = 1 exactamente cuando p es un mod cuadrado no q (un residuo cuadrático). </li>
+                                        </ul>
+                                   </h5>
+
+
+                              </p>
+
+                        </p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="ejem1">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 1</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto text-justify">
+				   Es el número 69 un módulo cuadrado del primo 389
+				</p>
+
+
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">SOLUCIÓN</p>
+
+
+
+
+
+
+<div >
+
+
+
+      <table class="tg" style="table-layout: fixed; width: 397.5px; border-color: white; margin-left: auto; margin-right: auto;"><colgroup> <col style="width: 313px;" /> <col style="width: 83px;" /> </colgroup>
+<tbody>
+<tr>
+<td class="tg-0097" style="width: 313px;">1. Tenemos que:</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=(44&divide;69)</td>
+</tr>
+<tr>
+<td class="tg-0097" style="width: 313px;">2. Este es igual a:</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=-(22&divide;69)</td>
+</tr>
+<tr>
+<td class="tg-0097" style="width: 313px;">3. Luego :</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=(11&divide;69)</td>
+</tr>
+<tr>
+<td class="tg-0097" style="width: 313px;">4. Se obtiene que:</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=(3&divide;11)</td>
+</tr>
+<tr>
+<td class="tg-0097" style="width: 313px;">5. Por el teorema de reciprocidad cuadr&aacute;tica:</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=(-2&divide;3)</td>
+</tr>
+<tr>
+<td class="tg-0097" style="width: 313px;">6 Por lo tanto 69, es un m&oacute;dulo cuadrado 389 y se puede expresar de la siguiente manera:</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=(1&divide;3)<br /><br /><span style="font-weight: bold;">=1</span></td>
+</tr>
+</tbody>
+</table>
+
+                       <SCRIPT = javascript>
+
+function outwin_open(nom,features){this.id = window.open("",nom,features);}
+function outwin_put(x){this.id.document.write(x);}
+function outwin_flush(){this.id.document.close();}
+function outwin_focus(){if( this.id.focus ) this.id.focus();}
+function outwin() {
+  this.id = 0;
+  this.open = outwin_open;
+  this.put = outwin_put;
+  this.done = outwin_flush;
+  this.focus = outwin_focus;
+}
+var out = new outwin();
+                 out.put("RESULTADO")      ;
+function jacobi(a){
+  var b = new Object(); b[0] = 1; b[1] = 1; b[2] = 1; // Array(1,1,1);
+  var sign = a[0];
+  var m = a[1];
+  var n = a[2];
+  out.put("<br>")  ;
+  if( sign > 0 ) out.put("("+m+"/"+n+") = ");
+  if( sign < 0 ) out.put("-("+m+"/"+n+") = ");
+  if( m > n-1 ) {
+    m = m % n;
+    if( sign > 0 ) out.put("("+m+"/"+n+") = ");
+    if( sign < 0 ) out.put("-("+m+"/"+n+") = ");
+  }
+  m = m % n;
+  if( m == 0 ){
+    out.put("0");
+    return 0;
+  }
+  if( m == 1 ) {
+    if( sign > 0 ) { out.put("1"); return 1; }
+    out.put("-1"); return -1;
+  }
+  var J2n = 1;
+  if( (3 == (n%8)) || (5 == (n%8)) ) J2n = -1;
+  if( 0 == (m%2) ) {
+    b[0] = J2n*sign;
+    b[1] = m/2;
+    b[2] = n;
+    return jacobi(b);
+  }
+  if( (3 == (n%4)) && (3 == (m%4)) ) {
+    b[0] = -sign;
+    b[1] = n % m;
+    b[2] = m;
+    return jacobi(b);
+  } else {
+    b[0] = sign;
+    b[1] = n % m;
+    b[2] = m;
+    return jacobi(b);
+  }
+}
+
+function go_handler(m,n){
+  if( 0 == n % 2 ){
+    alert(" El número inferior debe ser impar");
+    return;
+  }
+  if( (n < 0) || (m < 0) ){
+    alert("No ingresar números negativos");
+    return;
+  }
+  var a = new Object(); a[0] = 1; a[1] = m; a[2] = n; // Array(1,m,n);
+  out.open('popup','scrollbars=yes,resizable=yes,width=630,height=200');
+  out.put("<HTML><HEAD><TITLE>RESULTADO</TITLE></HEAD><BODY>");
+  var ans = jacobi(a);
+  out.put("<BR><BR>");
+  if( (ans == 1) && (n < 30000) ) {
+    res = false;
+    for( var i = 1; i < n/2; i++ ) {
+      if( 0 == (((i*i)-m) % n) ) {
+         res = true;
+         out.put("Un residuo: "+m+" = "+i+"&sup2 mod "+n+"<BR><BR>");
+         break;
+      }
+    }
+    if (res == false) out.put("No es un residuo<BR><BR>");
+  }
+  out.put("</BODY></HTML>");
+  out.focus();
+  out.done();
+}
+
+</script>
+
+
+    <BR>
+    <CENTER>
+                <H5>AHORA INTENTALO</H5>
+    </CENTER>
+<FORM name=forms>
+       <center>
+<P>  Ingresa p:
+    <INPUT TYPE="TEXT" NAME="text1" VALUE = "69" SIZE = 7 MAXLENGTH = 7><BR>
+    Ingresa q:
+                       <INPUT TYPE="TEXT" NAME="text2" VALUE = "389" SIZE = 7 MAXLENGTH = 7><br>
+   <INPUT TYPE="BUTTON" NAME = "go" VALUE = "Cálcular"
+     ONCLICK='go_handler(this.form.text1.value,this.form.text2.value)'>
+</P>
+       </center>
+</FORM>
+
+
+
+			</div>
+			<!-- Fin Carta-->
+
+
+		</div>
+        <div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="ejem2">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 2</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto text-justify">
+				   El número 23 es un módulo  del primo 97
+				</p>
+
+
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">SOLUCIÓN</p>
+
+
+
+
+
+
+<div >
+
+
+
+      <table class="tg" style="table-layout: fixed; width: 397.5px; border-color: white; margin-left: auto; margin-right: auto;"><colgroup> <col style="width: 313px;" /> <col style="width: 83px;" /> </colgroup>
+<tbody>
+<tr>
+<td class="tg-0097" style="width: 313px;">1. Tenemos que:</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=(23&divide;97)</td>
+</tr>
+<tr>
+<td class="tg-0097" style="width: 313px;">2. Este es igual a:</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=(5&divide;23)</td>
+</tr>
+<tr>
+<td class="tg-0097" style="width: 313px;">3. Luego :</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=(3&divide;5)</td>
+</tr>
+<tr>
+<td class="tg-0097" style="width: 313px;">4. Se obtiene que:</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=(2&divide;3)</td>
+</tr>
+<tr>
+<td class="tg-0097" style="width: 313px;">5. Por el teorema de reciprocidad cuadr&aacute;tica:</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=(-1&divide;3)</td>
+</tr>
+<tr>
+<td class="tg-0097" style="width: 313px;">6 Por lo tanto 69, es un m&oacute;dulo cuadrado 389 y se puede expresar de la siguiente manera:</td>
+<td class="tg-0097" style="width: 83.5px; text-align: center; vertical-align: middle;">=-1<br /><br /><span style="font-weight: bold;"></span></td>
+</tr>
+</tbody>
+</table>
+
+                       <SCRIPT = javascript>
+
+function outwin_open(nom,features){this.id = window.open("",nom,features);}
+function outwin_put(x){this.id.document.write(x);}
+function outwin_flush(){this.id.document.close();}
+function outwin_focus(){if( this.id.focus ) this.id.focus();}
+function outwin() {
+  this.id = 0;
+  this.open = outwin_open;
+  this.put = outwin_put;
+  this.done = outwin_flush;
+  this.focus = outwin_focus;
+}
+var out = new outwin();
+                 out.put("RESULTADO")      ;
+function jacobi(a){
+  var b = new Object(); b[0] = 1; b[1] = 1; b[2] = 1; // Array(1,1,1);
+  var sign = a[0];
+  var m = a[1];
+  var n = a[2];
+  out.put("<br>")  ;
+  if( sign > 0 ) out.put("("+m+"/"+n+") = ");
+  if( sign < 0 ) out.put("-("+m+"/"+n+") = ");
+  if( m > n-1 ) {
+    m = m % n;
+    if( sign > 0 ) out.put("("+m+"/"+n+") = ");
+    if( sign < 0 ) out.put("-("+m+"/"+n+") = ");
+  }
+  m = m % n;
+  if( m == 0 ){
+    out.put("0");
+    return 0;
+  }
+  if( m == 1 ) {
+    if( sign > 0 ) { out.put("1"); return 1; }
+    out.put("-1"); return -1;
+  }
+  var J2n = 1;
+  if( (3 == (n%8)) || (5 == (n%8)) ) J2n = -1;
+  if( 0 == (m%2) ) {
+    b[0] = J2n*sign;
+    b[1] = m/2;
+    b[2] = n;
+    return jacobi(b);
+  }
+  if( (3 == (n%4)) && (3 == (m%4)) ) {
+    b[0] = -sign;
+    b[1] = n % m;
+    b[2] = m;
+    return jacobi(b);
+  } else {
+    b[0] = sign;
+    b[1] = n % m;
+    b[2] = m;
+    return jacobi(b);
+  }
+}
+
+function go_handler(m,n){
+  if( 0 == n % 2 ){
+    alert(" El número inferior debe ser impar");
+    return;
+  }
+  if( (n < 0) || (m < 0) ){
+    alert("No ingresar números negativos");
+    return;
+  }
+  var a = new Object(); a[0] = 1; a[1] = m; a[2] = n; // Array(1,m,n);
+  out.open('popup','scrollbars=yes,resizable=yes,width=630,height=200');
+  out.put("<HTML><HEAD><TITLE>RESULTADO</TITLE></HEAD><BODY>");
+  var ans = jacobi(a);
+  out.put("<BR><BR>");
+  if( (ans == 1) && (n < 30000) ) {
+    res = false;
+    for( var i = 1; i < n/2; i++ ) {
+      if( 0 == (((i*i)-m) % n) ) {
+         res = true;
+         out.put("Un residuo: "+m+" = "+i+"&sup2 mod "+n+"<BR><BR>");
+         break;
+      }
+    }
+    if (res == false) out.put("No es un residuo<BR><BR>");
+  }
+  out.put("</BODY></HTML>");
+  out.focus();
+  out.done();
+}
+
+</script>
+
+
+    <BR>
+    <CENTER>
+                <H5>AHORA INTENTALO</H5>
+    </CENTER>
+<FORM name=forms>
+       <center>
+<P>  Ingresa p:
+    <INPUT TYPE="TEXT" NAME="text1" VALUE = "23" SIZE = 7 MAXLENGTH = 7><BR>
+    Ingresa q:
+                       <INPUT TYPE="TEXT" NAME="text2" VALUE = "97" SIZE = 7 MAXLENGTH = 7><br>
+   <INPUT TYPE="BUTTON" NAME = "go" VALUE = "Cálcular"
+     ONCLICK='go_handler(this.form.text1.value,this.form.text2.value)'>
+</P>
+       </center>
+</FORM>
+
+
+
+			</div>
+
+  </div>
+
+  <!-- Inicio Carta-->
+<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="bibliografia">
+  <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Bibliografía</p>
+  <hr size="2px" color="black" />
+  <div class="row no-gutters">
+    <div class="col">
+      <div class="card-body">
+        <p class="card-text card-content text-justify">
+          <li>Jiménez, L., Gordillo, J., y Rubiano, G. (2004). <i>Teoría de números para
+            principiantes</i> (2a. ed.).
+            Bogotá: Universidad Nacional de Colombia</li>
+          <li>Mora, W. (2010). <i> Introducción a la Teoría de Números. Ejemplos y algoritmo</i> 
+            Costa Rica: Escuela de Matemática,Instituto Tecnológico de Costa Rica</li>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin Carta-->
+<div class="container">
+  <footer>
+    <p class="card-text text-center"> <small class="text-muted">Última Actualización: 2 de Marzo,
+        2019</small></p>
+  </footer>
+</div>
+
+</body>
+
+</html>

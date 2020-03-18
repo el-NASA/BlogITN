@@ -1,0 +1,165 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title> CalculadoraMCM </title>
+
+</head>
+
+<body>
+	<div class="background">
+
+
+		<nav class="navbar sticky-top bg-dark">
+			<p class="text-principal-title">Calculadora de MCM y MCD</p>
+			<button class="btn btn-outline-light" type="button">
+				<a class="text-light" href="principalDivisibilidad.html">Volver</a>
+			</button>
+		</nav>
+
+		<div class="container-sm">
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="algoritmo">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">¿COMO FUNCIONA?</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								Cuando queremos encontrar el máximo común divisor (MCD) puede que estemos descomponiendo en factores primos por un rato. Sin embargo el algoritmo de Euclides permite encontrar el MCD de cualquier par de números de forma eficiente
+								(Jiménez L., Gordillo J., & Rubiano G., 2004).
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="euclides">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Calculadora</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					
+					<div class="col">
+						<div class="card-body">
+							<script>
+ // Funcion que clacula el MCD
+function MCD(){
+  if (arguments.length<2) return false;
+  if (arguments.length==2)return (arguments[1]==0?arguments[0]:MCD(arguments[1],arguments[0]%arguments[1]));
+  var arr=[].splice.call(arguments,0);
+  arr.splice(0,2,MCD(arr[0],arr[1]));
+  return MCD.apply(window,arr);
+}
+
+// Funcion que calcula el mcm
+function mcm(a,b){
+  if (arguments.length<2) return false;
+  if (arguments.length==2)return arguments[0]*arguments[1]/MCD(arguments[0],arguments[1]);
+  var arr=[].splice.call(arguments,0);
+  arr.splice(0,2,mcm(arr[0],arr[1]));
+  return mcm.apply(window,arr);
+}
+
+// La siguiente función recoge el valor de 'input'
+// extrae los números y descarta las comas,
+// convierte los números en enteros
+// y los inserta en un array
+function calcularMCDmcm() {
+  var input = document.getElementById('dataInput').value;
+  var numbers = []; // array que almacenará nuestros números
+  var idx = 0;  // indicador para usar como 'start position' del metodo substring
+// el siguiente bucle recorre cada caracter de nuestro string
+  for(var i = 0; i < input.length; i++) {
+    if (input[i] == ',') {  // verificamos si es una coma (,)
+      numbers.push(parseInt(input.substring(idx,i))); // extraemos el número y lo agregamos al array
+      idx = i + 1; // marcamos el nuevo 'start-position'
+    } else if (i == input.length - 1) { // si llegamos al final de la cadena
+      numbers.push(parseInt(input.substring(idx)));  // extraemos el último numero y lo agregamos al array
+    }
+  }
+  
+  // ahora ya podemos usar el método 'apply' con nuestras funciones MCD y mcm
+  document.getElementById('MCD').innerText = 'El MCD es: ' +  MCD.apply(window, numbers);
+  document.getElementById('mcm').innerText = 'El mcm es: ' +  mcm.apply(window, numbers);
+
+  // también lo puedes usar en la cónsola.
+  console.log('MCD:', MCD.apply(window, numbers));
+  console.log('mcm: ', mcm.apply(window, numbers));
+
+}
+</script>
+  <form id="mcmMCD" name="mcmMCD" style="padding-top: 1rem">
+    <label forHTML="dataInput">Introduzca números enteros separados por coma: </label>
+    <br><br>
+    <input type="text" id="dataInput" name="dataInput" size="30" placeholder="32,12,96" pattern="^\d+[0-9,]+\d+$" required/>
+    <button type="button" onclick="calcularMCDmcm()">Calcular</button>
+    <br><br>
+    <div id="MCD"></div>
+    <div id="mcm"></div>
+  </form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 1</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto text-justify">
+					Para calcular el MCD de 328 y 26 se tienen dos opciones.<br>
+					(a) descomposición en números primos <br>
+					(b) algoritmo de Euclides<br><br>
+					Nota: El MCD de los números a y b también puede escribirse como (a,b).
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Lo que hicimos fue dividir el mayor de los dos números del MCD por el menor, tal que:<br>
+								<center>328/26</center><br>
+								<p class="text-justify">
+									Luego representamos esto diciendo que 328 es igual a X veces 26 más su residuo.<br>
+									<center>328 = (12)*26 + 16</center><br>
+									<p class="text-justify">
+										En el siguiente paso dividimos 26 por su residuo, y volvimos a representar como x veces 16 más el residuo.<br>
+										<center>26 = (1)*16 + 10</center><br>
+										<p class="text-justify">
+											Esto lo repetimos hasta que el residuo sea cero.<br>
+											<center>6 = (1)*4 + 2</center><br>
+											<center>4 = (2)*2+0</center><br>
+											<p class="text-justify">
+												Entonces el resultado del MCD para ambos números se encuentra como el residuo de la penúltima línea. En este caso se observa (328, 26) = 2
+												Una explicación más teórica del método se encuentra en el apartado 2.3 del libro “Teoría de números para principiantes” de Jiménez L., Gordillo J., & Rubiano G., 2004).<br>
+											</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<div class="container">
+				<footer>
+					<p class="card-text text-center"> <small class="text-muted">Última Actualización: 17 de Marzo, 2020</small></p>
+				</footer>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

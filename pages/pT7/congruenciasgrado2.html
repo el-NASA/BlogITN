@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <title> Congruencias de segundo grado con módulo primo </title>
+
+</head>
+
+<body>
+    <div class="background">
+
+
+        <nav class="navbar sticky-top bg-dark">
+            <p class="text-principal-title">Congruencias de segundo grado con módulo primo</p>
+            <button class="btn btn-outline-light" type="button">
+                <a class="text-light" href="principal.html">Volver</a>
+            </button>
+        </nav>
+
+        <div class="container-sm">
+            <!-- Inicio Carta-->
+            <div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="def">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">¿CUÁLES SON?</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text card-content text-justify">
+                                Una congruencia cuadrática con módulo primo p tiene la forma:<br>
+                                <center><img
+                                        src="http://latex.codecogs.com/gif.latex?ax^2 + bx + c \equiv 0\left(mod:p\right)"
+                                        border="0" /> con mcd(a, p) = 1</center><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                Adaptación de (Jiménez, L., Gordillo, J., y Rubiano, G., 2004: 153)
+            </div>
+            <!-- Fin Carta-->
+
+            <!-- Inicio Carta-->
+            <div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="euclides">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">DEFINICIÓN</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text card-content text-justify">
+                                Decimos que p es un primo impar y a un entero, de forma que mcd(a, p) = 1.
+                                Y si la congruencia <img
+                                    src="http://latex.codecogs.com/gif.latex?x^2 \equiv a\left(mod:p\right)"
+                                    border="0" />tiene solución, decimos que
+                                es a es un residuo cuadrático módulo p.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                Adaptación de (Jiménez et al., 2004: 156)
+            </div>
+            <!-- Fin Carta-->
+
+            <!-- Inicio Carta-->
+            <div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="ejemplo">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 1</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="card-body">
+                        <div class="card-text card-content text-justify">
+
+                            <p class="card-text card-content mx-auto my-auto text-justify">
+                                Como los residuos cuadráticos módulo p, son los cuadrados módulo p,
+                                vemos que si p=13, los residuos cuadráticos módulo 13 son 1, 3, 4, 9, 10 y 12, para
+                                demostrar esto mostrar esto realizaremos las congruencias de los números anteriores a
+                                13:
+                            </p>
+                            <hr size="2px">
+                            </hr>
+                        </div>
+                    </div>
+                    <div class="col mx-3 my-auto text-center">
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?1^2 \equiv 1\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?2^2 \equiv 4\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?3^2 \equiv 9\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?4^2 \equiv 3\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?5^2 \equiv 12\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?6^2 \equiv 10\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?7^2 \equiv 10\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?8^2 \equiv 12\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?9^2 \equiv 3\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?10^2 \equiv 9\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?11^2 \equiv 4\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?12^2 \equiv 1\left(mod:13\right)"
+                            border="0" /><br><br><br><br><br><br><br>
+                    </div>
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+                            <hr size="2px">
+                            </hr>
+                            <p class="text-justify">
+                                Primero hallamos el cuadrado de 1<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?1^2 = 1" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?1(mod13) = 1" border="0" />
+                                </center><br>
+                                entonces decimos que 1 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                <br>Primero hallamos el cuadrado de 2<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?2^2 = 4" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?4(mod13) = 4" border="0" />
+                                </center><br>
+                                entonces decimos que 4 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                Primero hallamos el cuadrado de 3<br>
+                                <br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?3^2 = 9" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?9(mod13) = 9" border="0" />
+                                </center><br>
+                                entonces decimos que 9 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                <br>Primero hallamos el cuadrado de 4<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?4^2 = 16" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?16(mod13) = 3" border="0" />
+                                </center><br>
+                                entonces decimos que 3 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                <br>Primero hallamos el cuadrado de 5<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?5^2 = 25" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?25(mod13) = 12" border="0" />
+                                </center><br>
+                                entonces decimos que 12 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                <br>Primero hallamos el cuadrado de 6<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?6^2 = 36" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?36(mod13) = 10" border="0" />
+                                </center><br>
+                                entonces decimos que 10 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                <br>Primero hallamos el cuadrado de 7<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?7^2 = 49" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?49(mod13) = 10" border="0" />
+                                </center><br>
+                                entonces decimos que 10 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                <br>Primero hallamos el cuadrado de 8<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?8^2 = 64" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?64(mod13) = 12" border="0" />
+                                </center><br>
+                                entonces decimos que 12 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                <br>Primero hallamos el cuadrado de 9<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?9^2 = 81" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?81(mod13) = 3" border="0" />
+                                </center><br>
+                                entonces decimos que 3 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                <br>Primero hallamos el cuadrado de 10<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?10^2 = 100" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?100(mod13) = 9" border="0" />
+                                </center><br>
+                                entonces decimos que 9 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                <br>Primero hallamos el cuadrado de 11<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?11^2 = 121" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?121(mod13) = 4" border="0" />
+                                </center><br>
+                                entonces decimos que 4 es un residuo cuadrático módulo 13
+                            </p>
+                            <p class="text-justify">
+                                <br>Primero hallamos el cuadrado de 12<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?12^2 = 144" border="0" /></center>
+                                <br>
+                                y a este le encontramos su resto respecto a 13<br>
+                                <center><br><img src="http://latex.codecogs.com/gif.latex?144(mod13) = 1" border="0" />
+                                </center><br>
+                                entonces decimos que 1 es un residuo cuadrático módulo 13
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Carta-->
+
+            <!-- Inicio Carta-->
+            <div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="euclides">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">VEAMOS OTRA DEFINICIÓN</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text card-content text-justify">
+                                Si p es un primo impar y mcd(a, p) = 1, definimos el símbolo de Legendre (a|p) mediante
+                                las ecuaciones
+                                <center><img src="../../resources/rT7/cddef1.JPG" class="rounded" alt="def"></center>
+                                <br>
+                                El símbolo de Legendre se representa con frecuencia por la notación (ap).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                Adaptación de (Jiménez et al., 2004: 156)
+            </div>
+            <!-- Fin Carta-->
+            <!-- Inicio Carta-->
+            <div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="ejemplo">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 2</p>
+                <hr size="2px" color="black" />
+                <hr size="2px">
+                </hr>
+                <div class="row no-gutters">
+                    <div class="col mx-3 text-center">
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?(1|5) \equiv (4|5) \equiv 1"
+                            border="0" /><br><br><br><br><br><br><br>
+                        <br><br><br><img src="http://latex.codecogs.com/gif.latex?(3|5) \equiv (2|5) \equiv -1"
+                            border="0" /><br><br><br><br><br><br><br>
+                    </div>
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+                            <hr size="2px">
+                            </hr>
+                            <p class="text-justify">
+                                Para explicar porqué se dan 1 y 2, primero hallemos los residuos cuadráticos de módulo
+                                5<br>
+                                <center><img src="http://latex.codecogs.com/gif.latex?1^2 = 1 \to 1(mod5) = 1"
+                                        border="0" /><br>
+                                    <img src="http://latex.codecogs.com/gif.latex?2^2 = 4 \to 4(mod5) = 4"
+                                        border="0" /><br>
+                                    <img src="http://latex.codecogs.com/gif.latex?3^2 = 9 \to 9(mod5) = 4"
+                                        border="0" /><br>
+                                    <img src="http://latex.codecogs.com/gif.latex?4^2 = 16 \to 16(mod5) = 1"
+                                        border="0" /><br></center>
+                            </p>
+                            <p class="text-justify">
+                                se puede ver que 1 y 4 son los residuos cuadráticos módulo 5, y partiendo de la
+                                definición del símbolo de Legendre,
+                                es evidente que 3 y 2 no son un residuo cuadrático módulo 5 y por tanto tiene un valor
+                                de -1
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                Adaptación de (Mora, W. 2010: 107)
+            </div>
+            <!-- Inicio Carta-->
+            <div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="euclides">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">ALGUNOS TEOREMAS</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text card-content text-justify">
+                                <center>Teorema 1.1</center>
+                                "Sea p un primo impar. Entonces:<br>
+                                1. Si mcd(a, p) = mcd(b, p) = 1 y ab (mod p) entonces (a|p) = (b|p).<br>
+                                2. Hay exactamente <img src="http://latex.codecogs.com/gif.latex?\frac{p-1}{2}"
+                                    border="0" />residuos cuadráticos módulo p incongruentes.” 
+                                 (Jiménez et al., 2004: 157)
+                            </p>
+                            <p class="card-text card-content text-justify">
+                                <center>Teorema 1.2 -Pequeño teorema de fermat</center>
+                                Jiménez et al.(2004).(p.157) nos dice que si p es un número primo y mcd(a, p) = 1
+                                entonces
+                                <img src="http://latex.codecogs.com/gif.latex?a^{p-1} \equiv 1(modp)" border="0" />, por
+                                tanto <img src="http://latex.codecogs.com/gif.latex?a^{p-1} -1\equiv 0(modp)"
+                                    border="0" />
+                                Teniendo entonces:
+                                <center><img
+                                        src="http://latex.codecogs.com/gif.latex?a^{\frac{p-1}{2}} \equiv \pm 1(modp)"
+                                        border="0" /></center>
+                            </p>
+                            <p class="card-text card-content text-justify">
+                                <center>Teorema 1.3 - Criterio de Euler</center>
+                                Si a es residuo cuadrático módulo p osea mcd(a,p) = 1, hay un entero x tal que
+                                <img src="http://latex.codecogs.com/gif.latex?a \equiv _px^2" border="0" />y debido al
+                                teorema 1.2 tenemos que:<center>
+                                    <img src="http://latex.codecogs.com/gif.latex?a^{\frac{p-1}{2}} \equiv (x^{2})^{\frac{p-1}{2}} \equiv x^{p-1} \equiv \pm 1(modp)"
+                                        border="0" /></center><br>
+                                Y usando el símbolo de legendre tenemos:<br>
+                                <center>
+                                    <img src="http://latex.codecogs.com/gif.latex?a^{\frac{p-1}{2}} \equiv (a|p) (modp)"
+                                        border="0" /><br></center>
+                                        Adaptación de (Mora, W. 2010: 104) y (Jiménez et al., 2004: 158)
+                            </p>
+                            <p class="card-text card-content text-justify">
+                                <center>Teorema 1.4</center>
+                                Sea p un primo impar y sean a y b enteros primos relativos con p. entonces:<br>
+                                <center>
+                                    1. Si <img src="http://latex.codecogs.com/gif.latex?a \equiv b(modp)" border="0" />
+                                    entonces (a|p)=(b|p)<br>
+                                    2. <img src="http://latex.codecogs.com/gif.latex?(a^2|p) = 1" border="0" /><br>
+                                    3. (1|p) = 1<br>
+                                    4. <img
+                                        src="http://latex.codecogs.com/gif.latex?(a|p) \equiv a^{\frac{p-1}{2}}(modp)"
+                                        border="0" /><br>
+                                    5. (a|p)(b|p) = (ab|p)<br>
+                                    6. <img src="http://latex.codecogs.com/gif.latex?(-1|p) =  -1^{\frac{p-1}{2}}(modp)"
+                                        border="0" /><br></center>
+                                Adaptación de (Jiménez et al., 2004: 159)
+                            </p>
+                            <p class="card-text card-content text-justify">
+                                <center>Corolario</center>
+                                Si p es un primo impar tal que mcd(a,p)=1 y la representación canónica de a como
+                                producto de primos es
+                                <img src="http://latex.codecogs.com/gif.latex?a = \prod_{i=1}^kp_i^{a_i}" border="0" />,
+                                entonces:<br>
+                                <center><img
+                                        src="http://latex.codecogs.com/gif.latex?(a|p) = \prod_{i=1}^k(\frac{p_i}{p})^{a_i}"
+                                        border="0" /></center><br>
+                                Adaptación de (Jiménez et al., 2004: 159)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Carta-->
+
+            <!-- Inicio Carta-->
+            <div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="bibliografia">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Bibliografía</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text card-content text-justify">
+                                <li>Jiménez, L., Gordillo, J., y Rubiano, G. (2004). <i>Teoría de números para
+                                        principiantes</i> (2a. ed.).
+                                    Bogotá: Universidad Nacional de Colombia</li>
+                                <li>Mora, W. (2010). <i> Introducción a la Teoría de Números. Ejemplos y algoritmo</i>
+                                    Costa Rica: Escuela de Matemática,Instituto Tecnológico de Costa Rica</li>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Carta-->
+
+            <div class="container">
+                <footer>
+                    <p class="card-text text-center"> <small class="text-muted">Última Actualización: 2 de Marzo,
+                            2019</small></p>
+                </footer>
+            </div>
+
+
+        </div>
+</body>
+
+</html>

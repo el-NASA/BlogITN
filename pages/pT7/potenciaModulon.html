@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="../../js/ejercicioInteractivoModulon.js"></script>
+	<title> Potencias Modulo n </title>
+
+</head>
+
+<body>
+	<div class="background">
+
+
+		<nav class="navbar sticky-top bg-dark">
+			<p class="text-principal-title">Potencia modulo N</p>
+			<button class="btn btn-outline-light" type="button">
+				<a class="text-light" href="principal.html">Volver</a>
+			</button>
+		</nav>
+
+		<div class="container-sm">
+			<!-- Inicio Carta-->
+			<div  id="def" class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Definición Potencias Módulo n</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								Para poder entender este tema debemos recordar algunos temos como lo son:
+								<ul class="card-text card-content">
+  									<li>Máximo Común Divisor</li>
+  									<li>Teorema de Euler</li>
+ 							 		<li>Pequeño teorema de Fermat</li>
+  									<li>Restos Potenciales</li>
+								</ul>		
+							</p>
+							<p class="card-text card-content text-justify">
+								Sean <img src="http://latex.codecogs.com/gif.latex?p" border="0"/> un primo impar, <img src="http://latex.codecogs.com/gif.latex?a" border="0"/> un entero de forma que <img src="http://latex.codecogs.com/gif.latex?(a,p)=1" border="0"/> y <img src="http://latex.codecogs.com/gif.latex?m" border="0"/> un entero positivo. Si la congruencia <img src="http://latex.codecogs.com/gif.latex?x^m \equiv a\left(mod\:p\right)" border="0"/> tiene solución, decimos que <img src="http://latex.codecogs.com/gif.latex?a" border="0"/> es una es una potencia m-ésima módulo p.  
+							</p>
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez, L., Gordillo, J., y Rubiano, G., 2004: 172)
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="Ejemplo">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto text-justify">
+					Hallar las potencias cuartas módulo 11
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-auto text-center">			
+						Hallar las potencias cuartas módulo 11<br><br>
+						Sea p = 11<br><br>
+						Entonces:<br>
+						<img src="http://latex.codecogs.com/gif.latex?\left(\pm \:1\right)^4=1\left(mod\:11\right)" border="0"/><br>
+						<img src="http://latex.codecogs.com/gif.latex?\left(\pm \:2\right)^4=5\left(mod\:11\right)" border="0"/><br>
+						<img src="http://latex.codecogs.com/gif.latex?\left(\pm \:3\right)^4=4\left(mod\:11\right)" border="0"/><br><br>
+
+						Las potencias cuartas módulo 11 son: [1,4,5]
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Empezamos por revisar las condiciones, entonces vemos que p es un número primo ya que se divide sólo entre el 1 y sí mismo y es impar, por lo tanto debemos calcular los restos potenciales para los números menores a cuatro pero con potencia cuarta, es decir:<br>
+								<ul>
+  									<li>Para 1</li>
+  									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:1\right)^0=1\left(mod\:11\right)" border="0"/><br></center>
+  									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:1\right)^1=1\left(mod\:11\right)" border="0"/><br></center>
+  									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:1\right)^2=1\left(mod\:11\right)" border="0"/><br></center>
+  									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:1\right)^3=1\left(mod\:11\right)" border="0"/><br></center>
+  									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:1\right)^4=1\left(mod\:11\right)" border="0"/><br></center>
+  									<center>Entonces (1,11)=1</center>
+									<li>Para 2</li>
+									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:2\right)^0=1\left(mod\:11\right)" border="0"/><br></center>
+									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:2\right)^1=2\left(mod\:11\right)" border="0"/><br></center>
+									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:2\right)^2=4\left(mod\:11\right)" border="0"/><br></center>
+									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:2\right)^3=8\left(mod\:11\right)" border="0"/><br></center>
+									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:2\right)^4=5\left(mod\:11\right)" border="0"/><br></center>
+									<center>Entonces (5,11)=5</center>
+									<li>Para 3</li>
+									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:3\right)^0=1\left(mod\:11\right)" border="0"/><br></center>
+									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:3\right)^1=3\left(mod\:11\right)" border="0"/><br></center>
+									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:3\right)^2=9\left(mod\:11\right)" border="0"/><br></center>
+									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:3\right)^3=5\left(mod\:11\right)" border="0"/><br></center>
+									<center><img src="http://latex.codecogs.com/gif.latex?\left(\pm \:3\right)^4=4\left(mod\:11\right)" border="0"/><br></center>
+									<center>Entonces (4,11)=4</center><br>
+									<p class="text-justify">Vemos que todas las potencias cuartas cumplen con las condiciones con los números a siendo enteros, por lo tanto podemos concluir que  las potencias cuartas módulo 11 son: 1,4,5<p>
+								</ul>					
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez et al., 2004: 172)
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div  id="Teorema4.1" class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Teorema 4.1</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								Sea <img src="http://latex.codecogs.com/gif.latex?n" border="0"/> un número entero positivo y <img src="http://latex.codecogs.com/gif.latex?a" border="0"/> un entero tal que <img src="http://latex.codecogs.com/gif.latex?(a,n)=1" border="0"/>. Entonces el menor entero positivo k tal que <img src="http://latex.codecogs.com/gif.latex?a^k \equiv 1\left(mod\:n\right)" border="0"/>, se llama  orden <img src="http://latex.codecogs.com/gif.latex?a" border="0"/> módulo <img src="http://latex.codecogs.com/gif.latex?n" border="0"/> y se representa por la notación <img src="http://latex.codecogs.com/gif.latex?ord_n\:a" border="0"/>. 
+							</p>
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez et al., 2004: 172)
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div  id="Teorema4.2" class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Teorema 4.2</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								Si <img src="http://latex.codecogs.com/gif.latex?ord_n\:a = k" border="0"/> entonces para todo entero positivo  <img src="http://latex.codecogs.com/gif.latex?m" border="0"/> <img src="http://latex.codecogs.com/gif.latex?ord_n\:a^m=\frac{k}{\left(m,k\right)}" border="0"/>
+							</p>
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez et al., 2004: 174)
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div  id="Teorema4.3" class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Teorema 4.3</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								Sea <img src="http://latex.codecogs.com/gif.latex?ord_n\:p" border="0"/> un número primo. Si existe un entero a tal que <img src="http://latex.codecogs.com/gif.latex?ord_p\:a=h" border="0"/> entonces existen exactamente <img src="http://latex.codecogs.com/gif.latex?\phi(h)" border="0"/>
+								enteros incongruentes módulo <img src="http://latex.codecogs.com/gif.latex?p" border="0"/> que tienen orden <img src="http://latex.codecogs.com/gif.latex?h" border="0"/> módulo <img src="http://latex.codecogs.com/gif.latex?p" border="0"/>.
+							</p>
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez et al., 2004: 174)
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="EjemplosV">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo  Teorema 4.1</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-auto text-center">			
+						Si n = 8<br><br>
+						Entonces:<br><br>
+						Los coprimos menores que 8 son: [1,3,5,7].<br><br>
+						Tenemos la siguiente tabla de potencias:<br><br>
+						<img src="../../resources/rT7/tablateo4.1.jpg" border="0"/><br><br>
+						Por lo tanto:<br><br>
+						<img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:1=1" border="0"/><br>
+						<img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:3=2" border="0"/><br>
+						<img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:5=2" border="0"/><br>
+						<img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:7=2" border="0"/><br>
+						
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Empezamos por revisar las condiciones, entonces vemos que n es un entero positivo y a serán los coprimos menores que 8, recordemos que los coprimos de un número son aquellos números que no tienen ningún factor primo en común, es decir que no tienen otro divisor común más que el 1 y -1, entonces vemos que:<br>
+								<ul>
+  									<li>(1,8) = 1</li>
+  									<li>(3,8) = 1</li>
+  									<li>(5,8) = 1</li>
+  									<li>(7,8) = 1</li>
+								</ul>
+								Para realizar la tabla de potencias aplicamos los conceptos de restos potenciales hasta que a se convierta en 1, entonces:<br><br>
+								Para a es como tener:
+								<center><img src="http://latex.codecogs.com/gif.latex?1^1=1\left(mod\:\:8\right)" border="0"/><br></center>	
+								<center><img src="http://latex.codecogs.com/gif.latex?3^1=3\left(mod\:\:8\right)" border="0"/><br></center>	
+								<center><img src="http://latex.codecogs.com/gif.latex?5^1=5\left(mod\:\:8\right)" border="0"/><br></center>	
+								<center><img src="http://latex.codecogs.com/gif.latex?7^1=7\left(mod\:\:8\right)" border="0"/><br></center><br><br>
+								Ya encontramos hasta donde para el coprimo 1, pero proseguimos con el resto aumentando a    <img src="http://latex.codecogs.com/gif.latex?a^2" border="0"/>, entonces:<br><br>
+								Para <img src="http://latex.codecogs.com/gif.latex?a^2" border="0"/> es como tener:
+								<center><img src="http://latex.codecogs.com/gif.latex?3^2=1\left(mod\:\:8\right)" border="0"/><br></center>
+								<center><img src="http://latex.codecogs.com/gif.latex?5^2=1\left(mod\:\:8\right)" border="0"/><br></center>
+								<center><img src="http://latex.codecogs.com/gif.latex?7^2=1\left(mod\:\:8\right)" border="0"/><br></center>
+								Ya tenemos donde terminan todos, por lo tanto el orden equivale al menor <img src="http://latex.codecogs.com/gif.latex?a^k" border="0"/> donde el resto de los coprimos de n sea 1, por eso:
+								<img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:1=1" border="0"/><br>
+								<img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:3=2" border="0"/><br>
+								<img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:5=2" border="0"/><br>
+								<img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:7=2" border="0"/><br>
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez et al., 2004: 173)
+			</div>
+			<!-- Fin Carta-->
+			
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo  Teorema 4.2</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-auto text-center">			
+						Si <img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:7=2" border="0"/><br><br>
+						Entonces tenemos:<br><br>
+						<img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:7^2\:=\:\frac{2}{\left(2,2\right)}\:=\:1" border="0"/>
+						
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Entonces vemos que según el teorema:<br>
+								<img src="http://latex.codecogs.com/gif.latex?a=7" border="0"/>,<img src="http://latex.codecogs.com/gif.latex?n=8" border="0"/>,<img src="http://latex.codecogs.com/gif.latex?k=2" border="0"/> y para este caso tomaremos <img src="http://latex.codecogs.com/gif.latex?m=2" border="0"/>, entonces:<br><br>
+								<center><img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:7^2\:=\:\frac{2}{\left(2,2\right)}" border="0"/></center><br>
+								Entonces vemos que el m.c.d (2,2) es 2 entonces:
+								Para a es como tener:<br><br>
+								<center><img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:7^2\:=\:\frac{2}{2}\:=\:1" border="0"/></center><br>
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez et al., 2004: 175)
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo  Teorema 4.3</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-auto text-center">			
+						Si <img src="http://latex.codecogs.com/gif.latex?p=11" border="0"/>, <img src="http://latex.codecogs.com/gif.latex?ord_{\:11}\:4=5" border="0"/><br><br>
+						Entonces tenemos:<br><br>
+						<img src="http://latex.codecogs.com/gif.latex?\phi(5)\:=\:4" border="0"/><br><br>
+						Por ende los enteros incongruentes módulo 11 de orden 4 son <img src="http://latex.codecogs.com/gif.latex?4^1" border="0"/>,<img src="http://latex.codecogs.com/gif.latex?4^2" border="0"/>,<img src="http://latex.codecogs.com/gif.latex?4^3" border="0"/> y <img src="http://latex.codecogs.com/gif.latex?4^4" border="0"/> es decir 3,4,5,9 puesto que <img src="http://latex.codecogs.com/gif.latex?4^2=5\left(mod\:11\right)" border="0"/><br><br>
+						<center><img src="http://latex.codecogs.com/gif.latex?ord_{\:8}\:7^2\:=\:\frac{2}{2}\:=\:1" border="0"/></center><br>
+						
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								Entonces vemos que según el teorema:<br>
+								<img src="http://latex.codecogs.com/gif.latex?p=11" border="0"/> es un número primo, <img src="http://latex.codecogs.com/gif.latex?a=4" border="0"/> es un número entero y, <img src="http://latex.codecogs.com/gif.latex?h=5" border="0"/>, por ende <img src="http://latex.codecogs.com/gif.latex?\phi(5) = 4" border="0"/> puesto que <img src="http://latex.codecogs.com/gif.latex?\phi" border="0"/> es el número de coprimos de 5 y estos son 1,2,3 y 4, cómo deben ser menores a 5 realizamos los restos potenciales de estos hasta la 4 potencia:<br><br>
+								<center><img src="http://latex.codecogs.com/gif.latex?4^1=4\left(mod\:11\right)" border="0"/></center>
+								<center><img src="http://latex.codecogs.com/gif.latex?4^2=5\left(mod\:11\right)" border="0"/></center>
+								<center><img src="http://latex.codecogs.com/gif.latex?4^3=9\left(mod\:11\right)" border="0"/></center>
+								<center><img src="http://latex.codecogs.com/gif.latex?4^4=3\left(mod\:11\right)" border="0"/></center><br>
+								Como podemos ver de la forma <img src="http://latex.codecogs.com/gif.latex?x^m\equiv a\left(mod\:p\right)" border="0"/> en la que tenemos nuestros restos potenciales, los números a respecto a los números coprimos son:<br><br>
+								<ul>
+  									<li>Para 1 tenemos 4</li>
+  									<li>Para 2 tenemos 5</li>
+  									<li>Para 3 tenemos 9</li>
+  									<li>Para 4 tenemos 3</li>
+								</ul><br><br>
+								Entonces tenemos que los enteros incongruentes módulo 11 de orden 4 son: 3,4,5,9
+								
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez et al., 2004: 175)
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo Interactivo</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								Digita un número y encontraremos sus coprimos o primos relativos, es decir los números que no tienen ningún factor primo en común:<br>					
+								
+								Digita el número (mayor a 2):&nbsp&nbsp&nbsp
+								<input type="text" id="num1" name="num" placeholder="Escribe un número" >
+								<input type="button" name="btnprimo" value="Calcular" onclick="CalcularPrimos();">
+								<p class="card-text card-content text-justify" id="Resultado"><p>
+							</p>					
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="bibliografia">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Bibliografía</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								<li>Jiménez, L., Gordillo, J., y Rubiano, G. (2004). <i>Teoría de números para
+									principiantes</i> (2a. ed.).
+									Bogotá: Universidad Nacional de Colombia</li>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<div class="container">
+				<footer>
+					<p class="card-text text-center"> <small class="text-muted">Última Actualización: 2 de Marzo, 2019</small></p>
+				</footer>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

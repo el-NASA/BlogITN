@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <title> Raices primitivas </title>
+
+</head>
+
+<body>
+    <div class="background">
+
+        <nav class="navbar sticky-top bg-dark">
+            <p class="text-principal-title">Raíces primitivas</p>
+            <button class="btn btn-outline-light" type="button">
+                <a class="text-light" href="principal.html">Volver</a>
+            </button>
+        </nav>
+
+        <div class="container-sm">
+            <!-- Inicio Carta-->
+            <div id="def" class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">DEFINICIÓN</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text card-content text-justify">
+                                Si <img src="../../resources/rT7/raizpri.JPG" class="rounded" width="130px"
+                                    height="35px" alt="Raíz primitiva"> entonces a es una raíz primitiva módulo n.                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                Adaptación de (Jiménez, L., Gordillo, J., y Rubiano, G., 2004: 176)
+            </div>
+            <!-- Fin Carta-->
+
+            <!-- Inicio Carta-->
+            <div class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">¿Qué nos indica esta
+                    definición?</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text card-content text-justify">
+                                De esta definición y con base en los temas anteriores podemos ver que la expresión <img
+                                    src="../../resources/rT7/raizpri.JPG" class="rounded" width="130px" height="35px"
+                                    alt="Raíz primitiva"> denota que <img src="../../resources/rT7/equivalenciaRaiz.jpg"
+                                    class="rounded" width="142px" height="40px" alt="Raíz primitiva"> donde la función
+                                phi es el número de coprimos que posee el número n, es decir la cantidad de números
+                                tales que máximo común divisor sea 1.<br>
+                                Veamos un ejemplo con el que podremos comprobar otra afirmación acerca de las raices
+                                primitivas que no menciona que:<br>
+                                Sea p un número primo, entonces existen phi de p-1 raíces primitivas módulo p.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                Adaptación de (Jiménez et al., 2004: 176)
+            </div>
+            <!-- Fin Carta-->
+
+            <!-- Inicio Carta-->
+            <div id="ejemplo1" class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 1</p>
+                <hr size="2px" color="black" />
+                <p class="card-text card-content mx-auto my-auto text-justify">
+                    Hallar las raíces primitivas módulo 5.<br>
+                </p>
+                <hr size="2px">
+                </hr>
+                <div class="row no-gutters">
+                    <div class="col mx-3 text-center">
+                        <img src="../../resources/rT7/ejemplo1-1.JPG" class="rounded" alt="ejemplo1">
+                        <img src="../../resources/rT7/ejemplo1-2.jpg" class="rounded" alt="ejemplo1">
+                    </div>
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+                            <hr size="2px">
+                            </hr>
+                            <p class="text-justify">
+                                Tenemos que hallar todos los valores donde a elevado a la función phi de euler de 5 sea
+                                congruente con 1 (mod 5), es decir donde a elevado a la función phi de 5 restandole - 1
+                                sea igual a 5 k, donde k pertence a los enteros .<br></p>
+                            <p class="text-justify">
+                                Comenzamos hallando phi de 5, número que se halla recurriendo a una de las propiedades
+                                de la función phi de euler:<br>
+                                Sea p un número primo, entonces:<br><br>
+                                <center><img src="../../resources/rT7/propiedadPhi.JPG" class="rounded" alt="ejemplo1">
+                                </center>
+                            </p>
+                            <p class="text-justify">
+                                Hallamos los coprimos de 5, es decir los números tales que (a,5)=1, ya sabemos gracias a
+                                la función phi que esta cantidad deben ser 4.<br>
+                                Los 4 números que tienen de máximo común divisor entre ellos y 5 son [1,2,3,4] por lo
+                                que procedemos a realizar la tabla de restos potencias de a dondea es los
+                                coprimos.<br><br>
+                                <center><img src="../../resources/rT7/ejemplo1-3.JPG" class="rounded" alt="ejemplo1">
+                                </center>
+                                Como vemos el resto en el caso de 1 siempre es 1 por lo que no se coloca en la tabla,
+                                continuamos con el número 2, 3 y 4 finalmente.
+                                <p class="text-justify">
+                                    Necesitamos hallar los valores de a donde a elevada a la 4 sea congruente con 1(mod
+                                    5), Se obtiene el resultado de que los valores que cumplen esa condición son 2 y
+                                    3.<br>
+                                    En el caso del ejercicio anterior obtuvimos 2 raíces por lo que corroboramos la
+                                    afirmación realizada ya que phi de 4 es 2.<br>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Carta-->
+
+            <!-- Inicio Carta-->
+            <div id="tpimp" class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Teorema potencias
+                    incongruentes módulo p</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text card-content text-justify">
+                                Conociendo una raíz primitiva módulo p, donde p es primo podemos hallar las potencias
+                                m-ésimas módulo p mediante el uso del siguiente teorema.
+                            </p>
+                            <div class="col mx-3 text-center">
+                                <img src="../../resources/rT7/teoremapotenciasinc.JPG" class="rounded" alt="teorema1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Carta-->
+
+            <!-- Inicio Carta-->
+            <div id="ejemplo2" class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo 2</p>
+                <hr size="2px" color="black" />
+                <p class="card-text card-content mx-auto my-auto text-justify">
+                    Determinar las potencias cuartas módulo 7.<br>
+                </p>
+                <hr size="2px">
+                </hr>
+                <div class="row no-gutters">
+                    <div class="col mx-3 text-center">
+                        <img src="../../resources/rT7/ejemplo2r-1.JPG" class="rounded" alt="ejemplo2">
+                        <img src="../../resources/rT7/ejemplo2r-2.jpg" class="rounded" alt="ejemplo2">
+                    </div>
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+                            <hr size="2px">
+                            </hr>
+                            <p class="text-justify">
+                                Comenzamos hallando una raíz primitiva módulo 7.<br>
+                                Se deben hallar todos los valores de a tales que <img
+                                    src="../../resources/rT7/ejemplo2r-3.JPG" class="rounded" alt="ejemplo1">
+                                al ser 7 un número primo aplicando una de las propiedades de la función phi de euler
+                                mencionada anteriormente se tendrá que 7 posee 6 coprimos, en este caso los coprimos
+                                son:<br>
+                                <center>[1,2,3,4,5,6]</center>Procedemos a realizar la tabla de restos potencias de a
+                                donde a es los coprimos.
+                            </p>
+                            <p class="text-justify">
+                                <center><img src="../../resources/rT7/ejemplo2r-4.JPG" class="rounded" alt="ejemplo1">
+                                </center>
+                            </p>
+                            <p class="text-justify">
+                                Hallamos los coprimos de 5, es decir los números tales que (a,5)=1, ya sabemos gracias a
+                                la función phi que esta cantidad deben ser 4.<br>
+                                Los 4 números que tienen de máximo común divisor entre ellos y 5 son [1,2,3,4] por lo
+                                que procedemos a realizar la tabla de restos potencias de a dondea es los
+                                coprimos.<br><br>
+                                <center><img src="../../resources/rT7/ejemplo1-3.JPG" class="rounded" alt="ejemplo1">
+                                </center>
+                                Los valores de a que cumplen con la condición a elevado a la 4 sea congruente con 1(mod
+                                5) son 3 y 6, por lo que seleccionamos cualquiera de estos dos valores,
+                                en esta caso seleccionamos a 3 como b, a su vez m es 4 y d el máximo común divisor entre
+                                n y p-1 es decir entre 4 y 6, por lo que d es 2.
+
+                                <p class="text-justify">
+                                    <center><img src="../../resources/rT7/ejemplo2r-5.JPG" class="rounded"
+                                            alt="ejemplo1"></center><br>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                Adaptación de (Jiménez et al., 2004: 179)
+            </div>
+            <!-- Fin Carta-->
+
+            <!-- Inicio Carta-->
+			<div id="bibliografia" class="card border-dark mx-auto my-5" style="max-width: 1300px;">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Bibliografía</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+                                <li>Jiménez, L., Gordillo, J., y Rubiano, G. (2004). <i>Teoría de números para
+                                    principiantes</i> (2a. ed.).
+                                    Bogotá: Universidad Nacional de Colombia</li>
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- Fin Carta-->
+            
+            <div class="container">
+                <footer>
+                    <p class="card-text text-center"> <small class="text-muted">Última Actualización: 2 de Marzo,
+                            2019</small></p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../../resources/rT7/calculadora_SJ"></script>
+	<title> Simbolo de Jacobi </title>
+
+</head>
+
+<body>
+	<div class="background">
+
+
+		<nav class="navbar sticky-top bg-dark">
+			<p class="text-principal-title">Simbolo de Jacobi</p>
+			<button class="btn btn-outline-light" type="button">
+				<a class="text-light" href="principal.html">Volver</a>
+			</button>
+		</nav>
+
+		<div class="container-sm">
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px	;" id="def">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Simbolo de Jacobi</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								El símbolo de Jacobi, es una extensión del símbolo de Legendre, el cual es es usado para
+								determinar de una forma simple si un número primo e
+								impar es un residuo cuadrático, Jacobi generalizó esta fórmula, permitiendo realizarlo
+								con cualquier número impar.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="DefinicionSJ">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Definicion</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								<i>Si P es un entero positivo impar cuya representación canónica es:</i>
+							</p>
+							<div class="col mx-3 my-auto text-center">
+								<img src="../../resources/rT7/productoria.png" width="200px" height="100px"
+									alt="productoria">
+							</div>
+							<p class="card-text card-content text-justify">
+								<i>Definimos el símbolo de Jacobi (a|P) para todo entero a tal que (a, P) = 1, mediante
+									la ecuación</i>
+							</p>
+							<div class="col mx-3 my-auto text-center">
+								<img src="../../resources/rT7/productoria-2.png" width="200px" height="100px"
+									alt="productoria2">
+							</div>
+							<p class="card-text card-content text-justify">
+								<i>donde (a|p<sub>i</sub>) es el símbolo de Legendre. Además definimos (a|1) = 1</i>
+							</p>
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez, L., Gordillo, J., y Rubiano, G., 2004: 167)
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="propiedadesSJ">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Propiedades</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body" align="center">
+							<p class="card-text card-content text-justify">
+								<i>Sea P un entero positivo impar y sean a y b enteros primos relativos con P. Entonces
+									1. Si a ≡ b (mod P) entonces :</i>
+
+							</p>
+							<p class="card-text card-content text-justify-center">
+								1.(a|P) = (b|P).</br>
+								2. (a<sup>2</sup>|P) = 1.</br>
+								3. (1|P) = 1.</br>
+								4. (a|P)(b|P) = (ab|P)
+							</p>
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez et al., 2004: 167)
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="TeoremasSJ">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Teoremas</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body" align="center">
+							<p class="card-text card-content text-justify">
+								<i>Sea P un entero positivo impar, entonces:</i>
+
+							</p>
+							<p class="card-text card-content text-justify-center">
+								1. (-1|P) = (-1)<sup><sup>(P-1)</sup>/<sub>2</sub></sup></br>
+								2. (2|P) = (-1)<sup><sup>(P<sup>2</sup>-1)</sup>/<sub>8</sub></sup>
+							</p>
+							<p class="card-text card-content text-justify">
+								Jiménez et al (2004): 168
+							</p>
+							<p class="card-text card-content text-justify">
+								<i>Sean P y Q enteros impares positivos tales que (P, Q) = 1. Entonces::</i>
+
+							</p>
+							<p class="card-text card-content text-justify-center">
+								(P|Q)(Q|P) = (−1)<sup>r</sup> </br>
+								con r = <sup>1</sup>/<sub>2</sub> (P − 1) <sup>1</sup>/<sub>2</sub>(Q − 1)
+							</p>
+						</div>
+					</div>
+				</div>
+				Adaptación de (Jiménez et al., 2004: 169)
+			</div>
+			<!-- Fin Carta-->
+
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="ejemploSJ">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Ejemplo</p>
+				<hr size="2px" color="black" />
+				<p class="card-text card-content mx-auto my-auto text-justify">
+					Determinar si (420|631) es o no un residuo cuadratico<br>
+				</p>
+				<hr size="2px">
+				</hr>
+				<div class="row no-gutters">
+					<div class="col mx-3 my-auto text-center">
+						<img src="../../resources/rT7/ejemplo.jpg" class="rounded" width="500px" height="550px"
+							alt="ejemplo1">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-subtitle font-weight-normal mx-auto text-justify">Explicación...</p>
+							<hr size="2px">
+							</hr>
+							<p class="text-justify">
+								primero se separa el número en la mayor cantidad de factores.<br>
+								<center>(a|p)(b|p)=(ab|p)</center><br>
+								<p class="text-justify">
+									ahora se evalúa el (2|631)<br>
+									<center>(2|P) = (-1)<sup><sup>(P<sup>2</sup>-1)</sup>/<sub>8</sub></sup></center>
+									<br>
+									<p class="text-justify">
+										por lo tanto queda (105|631).<br>
+										Aplicamos la ley de la reciprocidad cuadrática:
+										<br>
+										<center>(P|Q)(Q|P) = (−1)r<br>
+											r = 12 (P − 1) 12 (Q − 1)</center><br>
+										<p class="text-justify">
+											Usando el símbolo de Jacobi los cálculos son más simples pues tenemos:<br>
+											<center> (1|P) = 1 </center><br>
+											<p class="text-justify">
+												Por lo tanto es un residuo cuadratico.<br>
+											</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="calculadora SJ">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Calculadora</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body" align="center">
+							<form action="" id="form">
+								<input type="text" name="numa" id="numa" placeholder="numero a">
+								<input type="text" name="numb" id="numb" placeholder="numero p">
+								<button type="button" onclick="getData()">Calcular</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="bibliografia">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Bibliografía</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								<li>Jiménez, L., Gordillo, J., y Rubiano, G. (2004). <i>Teoría de números para
+									principiantes</i> (2a. ed.).
+									Bogotá: Universidad Nacional de Colombia</li>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<div class="container">
+				<footer>
+					<p class="card-text text-center"> <small class="text-muted">Última Actualización: 2 de Marzo,
+							2019</small></p>
+				</footer>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

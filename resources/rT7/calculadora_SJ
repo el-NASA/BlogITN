@@ -1,0 +1,67 @@
+function getData(){
+	var numa = parseInt(document.getElementById("numa").value);
+    var numb = parseInt(document.getElementById("numb").value);
+	
+	if(Jacobi(numa,numb)==1){
+	alert("es 1, por lo tanto es residuo cuadratico");
+	}else{
+	alert("es -1, por lo tanto no es residuo cuadratico");
+	}
+	
+}
+
+function son_congruentes( a, b,n){
+	if((a-b)%n==0)
+     return true;
+   else
+     return false;
+}
+
+
+function hallarExponente( a)
+{
+  var cont=0;
+  while(a%2==0)
+  {
+    a/=2;
+    cont++;
+  }
+  return cont;
+}
+ 
+function Jacobi( a, n)
+{
+  var e=0,a1=1,n1=0,s=-2;
+     
+  if(n>=3 && 0<=a && a<n)
+  {
+     if(a==0 || a==1)
+         return a;
+          
+     e=hallarExponente(a);    
+     a1=Math.round(a/Math.pow(2,e));
+      
+     if(e%2==0)   
+       s=1;
+     else
+     {
+        if((son_congruentes(n,1,8))||(son_congruentes(n,7,8)))
+           s=1;
+        else
+          if((son_congruentes(n,3,8))||(son_congruentes(n,5,8)))
+            s=-1; 
+     }
+      
+     if((son_congruentes(n,3,4))&&(son_congruentes(a1,3,4)))    
+         s=-1*s;
+          
+     n1=n%a1;
+      
+     if(a1==1)
+       return s;
+     else
+       return (s*Jacobi(n1,a1));     
+  }    
+  return -2 ; 
+}
+

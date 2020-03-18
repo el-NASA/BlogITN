@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title> Teorema Chino del Resto </title>
+
+</head>
+
+<body>
+	<div class="background">
+
+
+		<nav class="navbar sticky-top bg-dark">
+			<p class="text-principal-title">¿Qué tanto sabe de los sistemas de numeración?</p>
+			<button class="btn btn-outline-light" type="button">
+				<a class="text-light" href="principal.html">Volver</a>
+			</button>
+		</nav>
+
+		<div class="container-sm">
+            <!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="historia">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center"> Historia </p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+                            <div class="col my-3 mx-3 text-center">
+                            <img src="../../resources/rT6/imgchino.jpg" style="text-align: center;">
+                        </div>
+							<p class="card-text card-content text-justify">
+                                <br>
+                                Sun Tzu (544 a.C.-496 a.C.).  Fue Escritor, pensador, político y militar chino, autor del más antiguo y brillante tratado militar. Sun Tzu, procedía del estado de Ch’i y gracias a su libro "el arte de la guerra" adquirió fama entre los señores feudales, en especial para el rey de Wu. 
+                                <br>
+                                <br>
+                                Sun Tzu pudo ser un general chino del siglo V a.C., la época de los Reinos Combatientes, que escribió El arte de la guerra, uno de los libros más antiguos que se conocen y un clásico de la literatura china. El arte de la guerra es un compendio de doctrinas básicas sobre táctica y estrategia militar, basándose en dos principios fundamentales: el engaño y el sometimiento del enemigo sin recurrir a la lucha. El libro ha sido de gran influencia en estadistas posteriores como Maquiavelo, Napoleón o Mao Zedong, y en los últimos años ha tenido gran influencia en la formación de directivos para numerosas multinacionales al transpolar sus enseñanzas al terreno de los negocios. 
+                                <br>
+                                <br>
+                                La obra de Sun Tzu llegó por primera vez a Europa en el periodo anterior a la Revolución Francesa, en forma de una breve traducción realizada por el sacerdote jesuita J. J. M. Amiot.  En  las  diversas  traducciones  que  se  han  hecho  desde  entonces,  se  nombra ocasionalmente al autor como Sun Wu o Sun Tzi. Sun Tzu utilizo El teorema Chino   de   los   restos   para ordenar sus tropas. 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="teorema">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center"> Teorema </p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								Sean m1, m2, …, mT, enteros positivos primos relativos dos a dos, y sean a1, a2, …, aT enteros arbitrarios. Entonces el sistema de congruencias lineales:
+								<br>
+								<br>
+								tiene una única solución única módulo
+                                <br>
+								<br>
+								Demostración. Para
+                                <br>
+								<br>
+                                Entonces (Mi, mi) = 1 para todo i.
+                                Por el Teorema existen soluciones únicas para las congruencias lineales
+ 
+                                <br>
+								<br>
+                                para i = 1, 2, …, r. Es decir existen enteros b1, b2, …, br tales que
+                                <br>
+								<br>
+                                Por lo tanto, 
+                                <br>
+								<br>
+                                y si establecemos, 
+                                <br>
+                                <br>
+                                tenemos que x0 ≡ ai (mod mi) para todo i, puesto que Mi ≡ 0 (mod mj) para j ≠ i. En consecuencia, x0 es una solución del sistema de congruencias.
+                                Supongamos ahora que x1 y x0 son dos soluciones del sistema. Entonces
+                                <br>
+                                <br>
+                                para i = 1, 2, …, r y por el Co	rolario concluimos que x1 ≡ x0 mod (mod m), donde
+                                <br>
+                                Por consiguiente, la solución es única módulo m.
+							</p>
+						</div>
+					</div>
+					<div class="col my-3 mx-3 text-center">
+                        <img src="../../resources/rT6/tcr1.PNG">
+                        <br>
+                        <br>
+                        <img src="../../resources/rT6/tcr2.PNG">
+                        <br>
+                        <br>
+                        <img src="../../resources/rT6/tcr3.PNG">
+                        <br>
+                                <br>
+                                <br>
+                        <img src="../../resources/rT6/tcr4.PNG">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="../../resources/rT6/tcr5.PNG">
+                        <br>
+                        <br>
+                        <img src="../../resources/rT6/tcr6.PNG">
+                        <br>
+                        <br>
+                        <img src="../../resources/rT6/tcr7.PNG">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="../../resources/rT6/tcr8.PNG">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="../../resources/rT6/tcr9.PNG">
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Referencia</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col">
+						<div class="card-body" style="text-align: center;">
+							<p>
+                                Jiménez L., Gordillo J., & Rubiano G., (2004) Teoria de numeros para principiantes. Bogotá D.C.: Universidad Nacional de Colombia
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<div class="container">
+				<footer>
+					<p class="card-text text-center"> <small class="text-muted">Última Actualización: 2 de Marzo, 2019</small></p>
+				</footer>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
