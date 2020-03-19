@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <title> Axiomas de Peano </title>
-    </head>
-    <body>
-        <div class="background">
-            <nav class="navbar sticky-top bg-dark">
-                <img src="../../resources/escudoUD.png" class="rounded" height="150px" alt=""
-			data-toggle="tooltip" data-placement="top" title="CO-GESTORES:&nbsp;
-			Brayan Steven A.  &nbsp;(20191020151) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bsarellanoe@correo.udistrital.edu.co&nbsp;
-			Jhon Elvis M. &nbsp;(20191020144) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jemalesv@correo.udistrital.edu.co&nbsp
-			Carlos Sinuco M.&nbsp;(20191020163) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;casinucom@correo.udistrital.edu.co&nbsp">
-                <p class="text-principal-title">Principio de induccion matematica 3</p>
-                <button class="btn btn-outline-light" type="button">
-                    <a class="text-light" href="principal.html">Volver</a>
-                </button>
-            </nav>
-            <div class="container-sm">
-                <!-- Inicio Carta-->
-			    <div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="definicion">
-				    <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">DEFINICION</p>
-				    <hr size="2px" color="black" />
-				    <div class="row no-gutters">
-					    <div class="col">
-						    <div class="card-body">
-							    <p class="card-text card-content text-justify">
-                                    Esta version del principio de induccion matematica es usado principalmente en conjuntos y se define de la siguiente manera:<br>
-                                    Sea a un unmero narutal fijo y U = {k ∈ Z | k ≥	a}
-                                    <br>Sea S⊆U tal que:
-                                    <br>&nbsp 1- a ∈ S
-                                    <br>&nbsp 2- Para cada n ≥	a, si n ∈ S entonces n+ ∈ S
-                                    <br>Entonces U=S
-                                </p>
-						    </div>
-					    </div>
-				    </div>
-			    </div>
-                <!-- Fin Carta-->
-                <!-- Inicio Carta-->
-			    <div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
-				    <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">EJEMPLO</p>
-				    <hr size="2px" color="black" />
-				    <div class="row no-gutters">
-					    <div class="col">
-						    <div class="card-body">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Pasos</th>
-                                            <th scope="col">Descripcion</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>U={k ∈ Z|k ≥ 5}</td>
-                                            <td>Suponga que U es el conjunto de numeros enteros mayores o iguales a 5</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>S⊆U | 5 ∈ S</td>
-                                            <td>Se supone la existencia de un subconjunto de U, el cual contiene el elemtento 5</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>5 ∈ S → 6 ∈ S</td>
-                                            <td>Como el elemtento 5 pertenece en S, el sucesor (6) tambien pertenece </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>∀ n ≥ 5 se tiene que n ∈ S</td>
-                                            <td>De manera iterativa se comprueba que todo numero natural mayor a 5 pertenece a S</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-							    
-						    </div>
-					    </div>
-				    </div>
-			    </div>
-			    <!-- Fin Carta-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <title> Axiomas de Peano </title>
+</head>
+
+<body>
+    <div class="background">
+        <nav class="navbar sticky-top bg-dark">
+            <p class="text-principal-title">Principio de induccion matematica 3</p>
+            <button class="btn btn-outline-light" type="button">
+                <a class="text-light" href="principal.html">Volver</a>
+            </button>
+        </nav>
+        <div class="container-sm">
+            <!-- Inicio Carta-->
+            <div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="definicion">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">DEFINICION</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text card-content text-justify">
+                                Esta version del principio de induccion matematica es usado principalmente en conjuntos
+                                y se define de la siguiente manera:<br>
+                                Sea a un unmero narutal fijo y U = {k ∈ Z | k ≥ a}
+                                <br>Sea S⊆U tal que:
+                                <br>&nbsp 1- a ∈ S
+                                <br>&nbsp 2- Para cada n ≥ a, si n ∈ S entonces n+ ∈ S
+                                <br>Entonces U=S
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Fin Carta-->
+            <!-- Inicio Carta-->
+            <div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+                <p class="card-title font-weight-bolder text-uppercase mx-auto text-center">EJEMPLO</p>
+                <hr size="2px" color="black" />
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Pasos</th>
+                                        <th scope="col">Descripcion</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>U={k ∈ Z|k ≥ 5}</td>
+                                        <td>Suponga que U es el conjunto de numeros enteros mayores o iguales a 5</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>S⊆U | 5 ∈ S</td>
+                                        <td>Se supone la existencia de un subconjunto de U, el cual contiene el
+                                            elemtento 5</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>5 ∈ S → 6 ∈ S</td>
+                                        <td>Como el elemtento 5 pertenece en S, el sucesor (6) tambien pertenece </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>∀ n ≥ 5 se tiene que n ∈ S</td>
+                                        <td>De manera iterativa se comprueba que todo numero natural mayor a 5 pertenece
+                                            a S</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Carta-->
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
