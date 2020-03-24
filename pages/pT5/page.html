@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../../css/personalStyle.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="../../resources/rT5/assets/css/main.css" />
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../../resources/rT5/assets/js/app.js"></script>
+	<title> Introducción a las congruencias lineales </title>
+
+</head>
+
+<body>
+	<div class="background">
+
+
+		<nav class="navbar sticky-top bg-dark">
+			<p class="text-principal-title"><br>¿Sabes qué son las congruencias lineales?</p>
+			<button class="btn btn-outline-light" type="button">
+				<a class="text-light" href="principal.html">Volver</a>
+			</button>
+		</nav>
+
+
+
+		<div class="container-sm">
+
+			<div class="col text-center">
+					<img src="../../resources/icono-ud.png" width="200" height="200" alt="" data-toggle="tooltip"
+						data-placement="top" title="CO-GESTORES:&nbsp;
+  Kevin Culma.  &nbsp;(20182020008) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kjculmac@correo.udistrital.edu.co&nbsp;
+  Zamudio Manuel.&nbsp;(20191020166) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mazamudiom@correo.udistrital.edu.co&nbsp;
+  Peña Nicolás.   &nbsp;(20191020124) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nepenag@correo.udistrital.edu.co&nbsp;">
+				</div>
+
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1300px;" id="euclides">
+				<p class="card-title font-weight-bolder text-uppercase mx-auto text-center"><br>Historia del concepto de congruencia</p>
+				<hr size="2px" color="black" />
+				<div class="row no-gutters">
+					<div class="col my-3 mx-3 text-center">
+						<img src="../../resources/rT5/images/512px-Carl_Friedrich_Gauss_1840_by_Jensen.jpg" class="rounded"  alt="Euclides">
+					</div>
+					<div class="col">
+						<div class="card-body">
+							<p class="card-text card-content text-justify">
+								“En 1801, Gauss a sus 24 años público el libro <i>Disquisitiones arithmeticae </i>, en el que introdujo la noción de congruencia". (Bell, 1949, § IX).<br>	<cite class="cita">
+										Imagen extraída de:
+										<a href="https://commons.wikimedia.org/wiki/File:Carl_Friedrich_Gauss_1840_by_Jensen.jpg" title="via Wikimedia Commons">Christian Albrecht Jensen</a> / Public domain
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+					<br><p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Introducción a las congruencias</p>
+				<section class="Contenedor-columna">
+					<div class="columnax2">
+						<h4> Ejemplo 1 </h4>
+						<p> Verificar que 19 ≡ 9 (mod 2) </p>
+						<p> como 2 * 5 = 10 </p>
+						<p> entonces 2|10</p>
+						<p> como 10=19-9 </p>
+						<p> entonces 2|(19-9) </p>
+						<p> luego 19 ≡ 9 (mod 2) </p>
+						<h5>Fuente: autor.</h5>
+					</div>
+					<div class="columnax2">
+						<h4>Definición </h4>
+						<img src="../../resources/rT5/images/Congruencias -lineales.png" alt="" />
+					</div>
+				</section>
+
+			</div>
+			<!-- Fin Carta-->
+
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+				<section class="Contenedor-columna">
+					<div class="columnax2">
+						<img src="../../resources/rT5/images/Reloj.jpg" alt="" />
+					</div>
+					<div class="columnax2">
+						<h4>Usos de las conguencias</h4>
+						<p>Las congruencias se utilizan para generar números pseudoaleatorios<br>. El área que estudia las congruencias se llama la arimética modular o también arimétoca del reloj. En la imagen de la izquierda se puede observar que cuando el denominador aumenta el residuo va aumentando hasta el numerador menos uno.</p>
+
+					</div>
+				</section>
+			</div>
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+				<br><p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Definición</p>
+				<section class="Contenedor-columna">
+					<div class="columnax2">
+						<h4> Ejemplo 2 </h4>
+						<p> Verificar que 5 ≡ 3 (mod 2). <br> <br>
+						 Se tiene por el teorema 2|5 y 2|3 <br>
+						 El residuo de cada uno es respectivamente:<br>
+							2|5 = 5    y    2|3 = 5<br>
+							y como los residuos son iguales la congruencias es cierta.<br>
+					 </p>
+					</div>
+					<div class="columnax2">
+						<h4> Teorema 2 </h4>
+						<p>“Dos enteros a y b son congruentes módulo n si y solo si tienen el mismo residuo al dividirlos por n”. Jiménez et al. (2004, p. 99).</p>
+						<p>Para cada entero m, la congruencia módulo m es una relación de equivalencia en el conjunto Z de los enteros Gutiérrez, J. Ruiz de Velasco, C. Bellas. (2002, p. 1).<br>
+							Por lo tanto, cumplen la reflexión, simetria y transitividad. <br>
+						</p>
+					</div>
+				</section>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 900px;" id="ejemplo">
+				<br><p class="card-title font-weight-bolder text-uppercase mx-auto text-center"><br>Ejemplo 1</p>
+				<section class="Contenedor-columna">
+					<div class="columnax2">
+						<h4> Ejemplo 3 </h4><br><br>
+						<p><b>Relación simétrica:</b><br> 7 ≡ 3 (mod 2)  <=>  3 ≡ 7 (mod 2)</p>
+						<p><b>Relación reflexiva:</b><br> 4 ≡ 4 (mod 10) </p>
+						<p>
+						 <b>Relación transitiva:</b><br> 20 ≡ 10 (mod 5) y 15 ≡ 25 (mod 5)<br>
+						 entonces 20 ≡ 25 (mod 5)
+					 </p>
+					</div>
+					<div class="columnax2">
+						<h4>Relaciones de equivalencia</h4>
+						<p>
+							Sean a y b números enteros, y m mayor que cero.<br>
+							<b>Relación simétrica</b><br>
+							a ≡ b (mod m) <=> b ≡ a (mod m)
+						</p>
+						<p>
+							<b>Relación reflexiva</b><br>
+							a ≡ a (mod m)
+						</p>
+						<p>
+							<b>Relación transitiva</b><br>
+							si a ≡ b (mod m)     y     b ≡ c (mod m)<br>
+							Entonces<br>
+							a ≡ c (mod m)
+						</p>
+					</div>
+				</section>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+				<br><p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Propiedades</p>
+				<div class=" TextoNormal">
+					<p>Si a ≡ b (mod n) y  c ≡ d (mod n) entonces:</p>
+						<prop class="Propiedades">
+							<p>
+							1. Para todo par de enteros r y s, ar + cs ≡ br + ds (mod n)<br>
+							2. a + c ≡ b + d (mod n).<br>
+							3. a - c ≡ b - d (mod n).<br>
+							4. a c ≡ b d (mod n).<br>
+							5. Para todo entero positivo k, a <sup>k</sup>≡b<sup>k</sup> (mod n).<br>
+							6. Para todo entero r,<br>
+							7. a + r ≡ c + r (mod n).<br>
+							8. Para todo entero r, ar ≡ br (mod n).</p>
+							<p>Tomado y adaptado de Jiménez et al. (2004, p. 100).<br>
+							9. Si a ≡ b (mod n) para dividir a a y b con un número t, se debe cumplir que mcd(n,t)=1</p>
+						</prop>
+					</div>
+				</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+					<br><p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Introducción a las congruencias lineales</p>
+					<div class="TextoNormal">
+						<p>En Álgebra se estudian detalladamente las ecuaciones polinómicas y sus soluciones.
+							En forma análoga podemos estudiar las congruencias polinómicas.
+							En este estudio consideramos únicamente polinomios f(x) con coeficientes enteros.</p>
+							Tomado y adaptado de Jiménez et al. (2004, p. 100).
+							<p> Las congruencias lineales se escriben así: ax ≡ b (mod n) y denotan un polinomio de grado uno de la forma ax + my = b.
+					</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<!-- Inicio Carta-->
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+					<br><p class="card-title font-weight-bolder text-uppercase mx-auto text-center">Introducción a las congruencias lineales</p>
+					<section class="Contenedor-columna">
+						<div class="columnax2">
+							<h4>Ejemplo 4</h4>
+							<p>Resolver la congruencia lineal<br> 40X ≡ 36 (mod 19) <br>
+								ya que el <br>mcd (40,19) = 1 entonces 1|36 <br>
+								por lo tanto la congruencia tiene una solución.<br>
+								Como el <br>mdc(19,4)=1 entonces<br> 10X ≡ 9 (mod 19)<br>
+								de acuerdo que <br>10-19 = -9  =>  -9X ≡ 9 (mod 19)<br>
+								ya que el <br>mdc(19,9)=1 => -X ≡ 1 (mod 19)<br>
+								se multiplica por -1 toda la congruencia<br>
+								X ≡ -1 (mod 19)<br>
+								de acuerdo a que<br>-1+19 = 18  =>  X ≡ 18 (mod 19) <br>
+								por lo tanto la única solución incongruente a la congruencia lineal 40X ≡ 36 (mod 19) es 18.<br>
+								Fuente: autor.
+							 </p>
+						</div>
+						<div class="columnax2">
+							<h4> Teorema 3 </h4>
+							<p>La congruencia lineal ax ≡ b (mod m) tiene solución si y	solo si d | b, donde <br>d = (a, m).<br>
+								La concruencia lineal también se puede expresar como ax + my = b.<br>
+								Si la congruencia tiene solución, entonces tiene exactamente d soluciones incongruentes.
+								 Además, si x<sub>0</sub> es una solución entonces,<br> x<sub>0</sub> + k(m/d) <br>es solución para todo entero<br> k = 0,1,2,3,4,...,d-1.</p>
+						</div>
+					</section>
+			</div>
+			<!-- Fin Carta-->
+
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+					<section class="Contenedor-columna">
+						<div class="columnax2">
+							<h4>Ejemplo 5</h4>
+							<p>Resolver la congruencia lineal 4X ≡ 20 (mod 8) <br>
+								ya que el mcd (4,8) = 4 entonces 4|20 <br>
+								por lo tanto la congruencia tiene cuatro soluciones.<br>
+								como el mdc(4,20)=4 entonces X ≡ 5 (mod 2)<br>
+								entonces X<sub>0</sub>=5<br>
+								n=2 y d = (1,2) =1<br>
+								entonces las soluciones estan dadas por<br>
+								5 + 2k con k perteneciente a los enteros. <br>
+							 </p>
+						</div>
+						<div class="columnax2">
+							<h4>Ejercicios propuestos</h4>
+							<p>
+									Verifique las siguientes conguencias lineales:<br>50X ≡ 25 (mod 14)<br>47X ≡ 5 (mod 42)<br>84X ≡ 20 (mod 16)<br>557X ≡ 45 (mod 152)
+							</p>
+						</div>
+					</section>
+				</section>
+			</div>
+			<!-- Fin Carta-->
+
+
+
+			<form class="interactivo">
+					<h2>Verifica si dos números son congruentes!!!</h2>
+				<input type="number" id="numb1" placeholder="Ingresa el primer número!!" >
+				<input type="number" id="numb2" placeholder="Ingresa el segundo número!!" >
+				<input type="number" id="modulo"  placeholder="Ingresa el modulo!!">
+				<button id="boton" type="button" onclick="getData()" value="validar">Revisar!!</Button>
+				<div id="res"></div>
+				<div id="resultado"></div>
+				<div id="res2"></div>
+				<div id="res3"></div>
+				<div id="res4"></div>
+				<div id="res5"></div>
+			</form>
+
+			<div class="card border-dark mx-auto my-5" style="max-width: 1000px;" id="ejemplo">
+				<div class="TextoNormal">
+					<h2><br>Referencias</h2>
+						<cite class="citación">
+							Jiménez, L. Gordillo, J. Rubiano, G. (2004). <i>Teoría de los números para principiantes </i>. Bogotá: Universidad Nacional de Colombia.<br>
+						<cite class="citación">
+							Bell, E.(1949).<i>Historia de las matemáticas</i>.Ciudad de México, México: Fondo de cultura económica <br>
+						<cite class="citación">
+							Gutiérrez, J. Ruiz de Velasco, C. Bellas. (2002). Lecciones de algebra. Recuperado de :
+							<a class="link" href="https://personales.unican.es/ruizvc/algebra/1.pdf">
+								https://personales.unican.es/ruizvc/algebra/1.pdf</a> <br><br>
+					</div>
+			</div>
+			<!-- Fin Carta-->
+
+			<div class="container">
+				<footer>
+					<p class="card-text text-center"> <small class="text-muted">Última Actualización: 2 de Marzo, 2020</small></p>
+				</footer>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
